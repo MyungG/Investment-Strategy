@@ -16,16 +16,34 @@ app.title = "SignalFinder"
 server = app.server
 
 
-def _nav_link(label, href, color="#94a3b8"):
-    return html.A(label, href=href, style={
-        "display": "block", "padding": "9px 14px",
-        "borderRadius": "8px", "color": color,
-        "fontWeight": "600", "fontSize": "13px",
-        "textDecoration": "none", "marginBottom": "2px",
-        "backgroundColor": "#0d1117",
-        "backgroundImage": "none",
-        "boxShadow": "none",
-    })
+_NAV_LINKS = [
+    ("\ud648",            "/",                 "#6366f1"),
+    ("\uad6d\ub0b4\uc8fc\uc2dd", "/market/domestic",  "#fb923c"),
+    ("\ud574\uc678\uc8fc\uc2dd", "/market/overseas",  "#60a5fa"),
+    ("SEPA \uc804\ub7b5", "/sepa",             "#6366f1"),
+    ("VPA \uc804\ub7b5",  "/vpa",              "#34d399"),
+]
+
+
+def _nav_link(label, href, active=False, accent="#6366f1"):
+    if active:
+        style = {
+            "display": "block", "padding": "9px 14px",
+            "borderRadius": "8px", "color": accent,
+            "fontWeight": "700", "fontSize": "13px",
+            "textDecoration": "none", "marginBottom": "2px",
+            "backgroundColor": f"{accent}18",
+            "borderLeft": f"3px solid {accent}",
+        }
+    else:
+        style = {
+            "display": "block", "padding": "9px 14px",
+            "borderRadius": "8px", "color": "#94a3b8",
+            "fontWeight": "600", "fontSize": "13px",
+            "textDecoration": "none", "marginBottom": "2px",
+            "backgroundColor": "#0d1117",
+        }
+    return html.A(label, href=href, style=style)
 
 
 def _nav_section(title):
@@ -36,45 +54,53 @@ def _nav_section(title):
     })
 
 
+def _build_sidebar(pathname):
+    return [
+        html.A([
+            html.Span("SF", style={
+                "background": "linear-gradient(135deg, #6366f1, #8b5cf6)",
+                "color": "white", "borderRadius": "8px",
+                "padding": "4px 10px", "fontWeight": "800",
+                "fontSize": "18px", "marginRight": "8px",
+            }),
+            html.Span("SignalFinder", style={
+                "color": "white", "fontWeight": "700", "fontSize": "16px",
+            }),
+        ], href="/", style={"textDecoration": "none", "display": "flex",
+                            "alignItems": "center", "marginBottom": "32px"}),
+
+        _nav_link("\ud648", "/",
+                  active=(pathname == "/"), accent="#6366f1"),
+
+        _nav_section("\uc2dc\uc7a5"),
+        _nav_link("\uad6d\ub0b4\uc8fc\uc2dd", "/market/domestic",
+                  active=(pathname == "/market/domestic"), accent="#fb923c"),
+        _nav_link("\ud574\uc678\uc8fc\uc2dd", "/market/overseas",
+                  active=(pathname == "/market/overseas"), accent="#60a5fa"),
+
+        _nav_section("\uc804\ub7b5"),
+        _nav_link("SEPA \uc804\ub7b5", "/sepa",
+                  active=(pathname == "/sepa"), accent="#6366f1"),
+        _nav_link("VPA \uc804\ub7b5", "/vpa",
+                  active=(pathname == "/vpa"), accent="#34d399"),
+    ]
+
+
 # ── Sidebar ────────────────────────────────────────────────
-SIDEBAR = html.Div([
-    # Logo
-    html.A([
-        html.Span("SF", style={
-            "background": "linear-gradient(135deg, #6366f1, #8b5cf6)",
-            "color": "white", "borderRadius": "8px",
-            "padding": "4px 10px", "fontWeight": "800",
-            "fontSize": "18px", "marginRight": "8px",
-        }),
-        html.Span("SignalFinder", style={
-            "color": "white", "fontWeight": "700", "fontSize": "16px",
-        }),
-    ], href="/", style={"textDecoration": "none", "display": "flex",
-                        "alignItems": "center", "marginBottom": "32px"}),
-
-    # Home
-    _nav_link("\ud648", "/"),
-
-    # Market section
-    _nav_section("\uc2dc\uc7a5"),
-    _nav_link("\uad6d\ub0b4\uc8fc\uc2dd", "/market/domestic"),
-    _nav_link("\ud574\uc678\uc8fc\uc2dd", "/market/overseas"),
-
-    # Strategy section
-    _nav_section("\uc804\ub7b5"),
-    _nav_link("SEPA \uc804\ub7b5", "/sepa"),
-    _nav_link("VPA \uc804\ub7b5", "/vpa"),
-
-], id="sidebar-nav", className="sidebar-nav", style={
-    "width": "200px",
-    "minHeight": "100vh",
-    "background": "#0d1117",
-    "borderRight": "1px solid #21262d",
-    "padding": "28px 12px",
-    "position": "fixed",
-    "top": 0, "left": 0,
-    "fontFamily": "Inter, sans-serif",
-})
+SIDEBAR = html.Div(
+    id="sidebar-nav",
+    className="sidebar-nav",
+    style={
+        "width": "200px",
+        "minHeight": "100vh",
+        "background": "#0d1117",
+        "borderRight": "1px solid #21262d",
+        "padding": "28px 12px",
+        "position": "fixed",
+        "top": 0, "left": 0,
+        "fontFamily": "Inter, sans-serif",
+    }
+)
 
 
 app.layout = html.Div([
@@ -129,17 +155,22 @@ app.clientside_callback(
 )
 
 
-@app.callback(Output("page-content", "children"), Input("url", "pathname"))
+@app.callback(
+    Output("page-content", "children"),
+    Output("sidebar-nav", "children"),
+    Input("url", "pathname"),
+)
 def route(pathname):
+    sidebar = _build_sidebar(pathname)
     if pathname == "/sepa":
-        return sepa.layout()
+        return sepa.layout(), sidebar
     if pathname == "/market/domestic":
-        return market.layout_domestic()
+        return market.layout_domestic(), sidebar
     if pathname == "/market/overseas":
-        return market.layout_overseas()
+        return market.layout_overseas(), sidebar
     if pathname == "/vpa":
-        return vpa.layout()
-    return home.layout()
+        return vpa.layout(), sidebar
+    return home.layout(), sidebar
 
 
 
