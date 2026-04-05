@@ -381,3 +381,202 @@ def analyze_stock(df: pd.DataFrame, ticker: str, name: str) -> dict | None:
         "pattern":     " + ".join(patterns),
         **details,
     }
+
+
+# ─────────────────────────────────────────
+# VPA (Volume Price Analysis) — Anna Coulling
+# ─────────────────────────────────────────
+
+def _vpa_metrics(df: pd.DataFrame) -> pd.DataFrame:
+    """VPA 분석용 보조 컬럼 추가."""
+    d = df.copy()
+    d["spread"]       = d["High"] - d["Low"]
+    d["body"]         = (d["Close"] - d["Open"]).abs()
+    d["close_pos"]    = (d["Close"] - d["Low"]) / d["spread"].replace(0, np.nan)
+    d["vol_ma20"]     = d["Volume"].rolling(20).mean()
+    d["spread_ma20"]  = d["spread"].rolling(20).mean()
+    d["vol_ratio"]    = d["Volume"] / d["vol_ma20"]
+    d["spread_ratio"] = d["spread"] / d["spread_ma20"].replace(0, np.nan)
+    d["is_up"]        = d["Close"] >= d["Open"]
+    return d
+
+
+def check_stopping_volume(df: pd.DataFrame) -> dict | None:
+    """
+    Stopping Volume (하락 멈춤 신호)
+    - 최근 5일 내 하락 추세
+    - 고거래량 (20일 평균 1.5배 이상)
+    - 좁은 스프레드 or 긴 아래꼬리 (종가가 중간 이상)
+    """
+    if len(df) < 25:
+        return None
+    d = _vpa_metrics(df)
+    row = d.iloc[-1]
+
+    # 최근 5일 하락 추세 확인
+    recent_trend = d["Close"].iloc[-6:-1].mean()
+    if row["Close"] >= recent_trend * 1.01:
+        return None
+
+    if (row["vol_ratio"] >= 1.5
+            and row["close_pos"] >= 0.5
+            and row["spread_ratio"] <= 1.0):
+        return {
+            "pattern":   "Stopping Volume",
+            "vol_ratio": round(float(row["vol_ratio"]), 2),
+            "close_pos": round(float(row["close_pos"]), 2),
+        }
+    return None
+
+
+def check_no_supply(df: pd.DataFrame) -> dict | None:
+    """
+    No Supply (공급 없음 — 매수 신호)
+    - 하락 캔들
+    - 거래량 < 20일 평균의 70%
+    - 좁은 스프레드
+    - MA50 위에 위치 (상승 추세 컨텍스트)
+    """
+    if len(df) < 55:
+        return None
+    d = _vpa_metrics(df)
+    row   = d.iloc[-1]
+    ma50  = df["Close"].rolling(50).mean().iloc[-1]
+
+    if (not row["is_up"]
+            and row["vol_ratio"] <= 0.70
+            and row["spread_ratio"] <= 0.80
+            and row["Close"] > ma50):
+        return {
+            "pattern":   "No Supply",
+            "vol_ratio": round(float(row["vol_ratio"]), 2),
+        }
+    return None
+
+
+def check_no_demand(df: pd.DataFrame) -> dict | None:
+    """
+    No Demand (수요 없음 — 약세 경고)
+    - 상승 캔들
+    - 거래량 < 20일 평균의 70%
+    - 좁은 스프레드
+    """
+    if len(df) < 25:
+        return None
+    d = _vpa_metrics(df)
+    row = d.iloc[-1]
+
+    if (row["is_up"]
+            and row["vol_ratio"] <= 0.70
+            and row["spread_ratio"] <= 0.80):
+        return {
+            "pattern":   "No Demand",
+            "vol_ratio": round(float(row["vol_ratio"]), 2),
+        }
+    return None
+
+
+def check_testing(df: pd.DataFrame) -> dict | None:
+    """
+    Testing (지지 확인 신호)
+    - 저거래량 (< 50% of avg)
+    - 좁은 스프레드
+    - 전일 대비 소폭 하락 또는 보합
+    - MA50 위에 위치
+    """
+    if len(df) < 55:
+        return None
+    d = _vpa_metrics(df)
+    row   = d.iloc[-1]
+    prev  = d.iloc[-2]
+    ma50  = df["Close"].rolling(50).mean().iloc[-1]
+
+    price_change = (row["Close"] - prev["Close"]) / prev["Close"] * 100
+
+    if (row["vol_ratio"] <= 0.50
+            and row["spread_ratio"] <= 0.70
+            and -2.0 <= price_change <= 0.5
+            and row["Close"] > ma50):
+        return {
+            "pattern":   "Testing",
+            "vol_ratio": round(float(row["vol_ratio"]), 2),
+            "chg":       round(price_change, 2),
+        }
+    return None
+
+
+def check_effort_vs_result(df: pd.DataFrame) -> dict | None:
+    """
+    Effort vs Result — 강한 매수세 확인
+    - 고거래량 (2배 이상)
+    - 큰 상승 캔들 (스프레드가 평균 이상)
+    - 종가가 당일 고점 근처
+    """
+    if len(df) < 25:
+        return None
+    d = _vpa_metrics(df)
+    row = d.iloc[-1]
+
+    if (row["is_up"]
+            and row["vol_ratio"] >= 2.0
+            and row["spread_ratio"] >= 1.2
+            and row["close_pos"] >= 0.70):
+        return {
+            "pattern":   "Effort vs Result",
+            "vol_ratio": round(float(row["vol_ratio"]), 2),
+            "spread_ratio": round(float(row["spread_ratio"]), 2),
+        }
+    return None
+
+
+# ── 종목별 VPA 종합 스캔 ───────────────────────────────────
+
+VPA_BULLISH = ["Stopping Volume", "No Supply", "Testing", "Effort vs Result"]
+VPA_BEARISH = ["No Demand"]
+
+VPA_COLORS = {
+    "Stopping Volume":   "#34d399",
+    "No Supply":         "#60a5fa",
+    "Testing":           "#a78bfa",
+    "Effort vs Result":  "#fbbf24",
+    "No Demand":         "#f87171",
+}
+
+
+def scan_vpa(df: pd.DataFrame, ticker: str, name: str) -> dict | None:
+    """
+    VPA 패턴 종합 스캔.
+    bullish 패턴 1개 이상 감지 시 반환.
+    """
+    if len(df) < 60:
+        return None
+
+    checks = [
+        check_stopping_volume(df),
+        check_no_supply(df),
+        check_testing(df),
+        check_effort_vs_result(df),
+    ]
+    matched = [c for c in checks if c]
+    if not matched:
+        return None
+
+    close     = df["Close"]
+    volume    = df["Volume"]
+    cur       = float(close.iloc[-1])
+    ma50      = float(close.rolling(50).mean().iloc[-1])
+    avg_vol20 = float(volume.iloc[-20:].mean())
+    vol_ratio = float(volume.iloc[-1] / avg_vol20)
+
+    patterns = [c["pattern"] for c in matched]
+
+    return {
+        "ticker":    ticker,
+        "name":      name,
+        "price":     int(cur),
+        "vol_ratio": f"{vol_ratio:.1f}x",
+        "vs_ma50":   f"{(cur - ma50) / ma50 * 100:+.1f}%",
+        "pattern":   patterns[0],          # 대표 패턴
+        "patterns":  " + ".join(patterns),
+        "signal":    "bullish" if patterns[0] in VPA_BULLISH else "bearish",
+    }

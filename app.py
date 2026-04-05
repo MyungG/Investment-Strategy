@@ -1,7 +1,7 @@
 import dash
 from dash import dcc, html, Input, Output
 import dash_bootstrap_components as dbc
-from pages import sepa, home, market
+from pages import sepa, home, market, vpa
 
 
 app = dash.Dash(
@@ -62,6 +62,7 @@ SIDEBAR = html.Div([
     # Strategy section
     _nav_section("\uc804\ub7b5"),
     _nav_link("SEPA \uc804\ub7b5", "/sepa"),
+    _nav_link("VPA \uc804\ub7b5", "/vpa"),
 
 ], id="sidebar-nav", className="sidebar-nav", style={
     "width": "200px",
@@ -88,6 +89,7 @@ app.layout = html.Div([
         }
     ),
     dcc.Store(id="_scroll-dummy"),
+    dcc.Store(id="_vpa-scroll-dummy"),
 ], style={"background": "#0d1117"})
 
 
@@ -108,6 +110,23 @@ app.clientside_callback(
     prevent_initial_call=True,
 )
 
+app.clientside_callback(
+    """
+    function(children) {
+        if (children) {
+            setTimeout(function() {
+                var el = document.getElementById('vpa-chart-area');
+                if (el) { el.scrollIntoView({behavior: 'smooth', block: 'start'}); }
+            }, 150);
+        }
+        return null;
+    }
+    """,
+    Output("_vpa-scroll-dummy", "data"),
+    Input("vpa-chart-area", "children"),
+    prevent_initial_call=True,
+)
+
 
 @app.callback(Output("page-content", "children"), Input("url", "pathname"))
 def route(pathname):
@@ -115,6 +134,8 @@ def route(pathname):
         return sepa.layout()
     if pathname == "/market":
         return market.layout()
+    if pathname == "/vpa":
+        return vpa.layout()
     return home.layout()
 
 
@@ -253,6 +274,84 @@ def show_chart(n_clicks_list, data):
             }),
             *reason_blocks,
             criteria_section,
+        ], style={
+            "background": "#0f172a",
+            "border": "1px solid #1e293b",
+            "borderRadius": "10px",
+            "padding": "18px 20px",
+            "marginTop": "16px",
+        }),
+    ])
+
+
+@app.callback(
+    Output("vpa-chart-area", "children"),
+    dash.Input({"type": "vpa-chart-btn", "index": dash.ALL}, "n_clicks"),
+    dash.State("vpa-signals-store", "data"),
+    prevent_initial_call=True,
+)
+def show_vpa_chart(n_clicks_list, data):
+    import pandas as pd
+    from dash import ctx, no_update
+    from components.chart_plotly import build_chart
+    from pages.vpa import _vpa_reason_text, VPA_COLORS, VPA_KO
+
+    if not any(n for n in n_clicks_list if n):
+        return no_update
+
+    idx     = ctx.triggered_id["index"]
+    row     = pd.Series(data[idx])
+    ticker  = str(row["ticker"]).zfill(6)
+    name    = row["name"]
+    pattern = row.get("pattern", "")
+    color   = VPA_COLORS.get(pattern, "#888")
+
+    fig    = build_chart(ticker, name, days=120)
+    reason = _vpa_reason_text(row)
+
+    items = [s.strip() for s in reason.split("  |  ") if s.strip()]
+    price_summary = items[0] if items else ""
+    signal_items  = items[1:] if len(items) > 1 else []
+
+    reason_blocks = [
+        html.Div(price_summary, style={
+            "color": "#64748b", "fontSize": "12px",
+            "marginBottom": "12px", "fontFamily": "monospace",
+        }),
+    ] + [
+        html.Div([
+            html.Span("\u25cf", style={
+                "color": color, "marginRight": "10px", "fontSize": "10px",
+                "flexShrink": "0", "marginTop": "4px",
+            }),
+            html.Span(item, style={
+                "color": "#e2e8f0", "fontSize": "14px", "lineHeight": "1.6",
+            }),
+        ], style={
+            "background": "#1e293b",
+            "border": "1px solid #334155",
+            "borderLeft": f"3px solid {color}",
+            "borderRadius": "6px",
+            "padding": "10px 14px",
+            "marginBottom": "8px",
+            "display": "flex",
+            "alignItems": "flex-start",
+        })
+        for item in signal_items
+    ]
+
+    return html.Div([
+        html.Hr(style={"borderColor": "#21262d", "marginTop": "32px"}),
+        html.H5(f"{name}  ({ticker})",
+                style={"color": "white", "marginBottom": "16px"}),
+        dcc.Graph(figure=fig, config={"displayModeBar": True,
+                                      "modeBarButtonsToRemove": ["lasso2d", "select2d"]}),
+        html.Div([
+            html.Div(VPA_KO.get(pattern, pattern), style={
+                "color": color, "fontSize": "12px", "fontWeight": "700",
+                "letterSpacing": "1px", "marginBottom": "12px",
+            }),
+            *reason_blocks,
         ], style={
             "background": "#0f172a",
             "border": "1px solid #1e293b",
