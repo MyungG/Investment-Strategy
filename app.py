@@ -1,7 +1,7 @@
 import dash
 from dash import dcc, html, Input, Output
 import dash_bootstrap_components as dbc
-from pages import sepa, home
+from pages import sepa, home, market
 
 
 app = dash.Dash(
@@ -22,6 +22,9 @@ def _nav_link(label, href, color="#94a3b8"):
         "borderRadius": "8px", "color": color,
         "fontWeight": "600", "fontSize": "13px",
         "textDecoration": "none", "marginBottom": "2px",
+        "backgroundColor": "#0d1117",
+        "backgroundImage": "none",
+        "boxShadow": "none",
     })
 
 
@@ -52,11 +55,15 @@ SIDEBAR = html.Div([
     # Home
     _nav_link("\ud648", "/"),
 
+    # Market section
+    _nav_section("\uc2dc\uc7a5"),
+    _nav_link("\uc2dc\uc7a5\uc815\ubcf4", "/market"),
+
     # Strategy section
     _nav_section("\uc804\ub7b5"),
-    _nav_link("SEPA \uc804\ub7b5", "/sepa", color="#6366f1"),
+    _nav_link("SEPA \uc804\ub7b5", "/sepa"),
 
-], style={
+], id="sidebar-nav", className="sidebar-nav", style={
     "width": "200px",
     "minHeight": "100vh",
     "background": "#0d1117",
@@ -106,7 +113,11 @@ app.clientside_callback(
 def route(pathname):
     if pathname == "/sepa":
         return sepa.layout()
+    if pathname == "/market":
+        return market.layout()
     return home.layout()
+
+
 
 
 # Register chart callbacks
@@ -253,4 +264,4 @@ def show_chart(n_clicks_list, data):
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=8050)
+    app.run(debug=False, port=8060)

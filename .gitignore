@@ -2,6 +2,8 @@ __pycache__/
 *.py[cod]
 *.pyo
 .env
+.kis_token.json
+.kis_investor_cache.json
 signals_*.csv
 *.log
 .DS_Store

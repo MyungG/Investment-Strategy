@@ -1,0 +1,18 @@
+#sidebar-nav a,
+#sidebar-nav a:link,
+#sidebar-nav a:visited,
+#sidebar-nav a:hover,
+#sidebar-nav a:active,
+#sidebar-nav a:focus {
+    background: #0d1117 !important;
+    background-color: #0d1117 !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+    color: #94a3b8 !important;
+}
+
+#sidebar-nav a:hover {
+    opacity: 0.75;
+}
