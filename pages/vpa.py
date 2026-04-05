@@ -181,7 +181,7 @@ def build_strategy_section():
 
         dbc.Row([
             _vpa_pillar("S", "Stopping Volume", "#34d399",
-                        "\uc138\ub825 \uc8fc\uccb4\uac00 \ub9e4\ub3c4 \ucc28\uc785\uc790\ub97c \ud300\uc5d0 \ud235\uc2b5\ub2c8\ub2e4. "
+                        "\uc138\ub825 \uc8fc\uccb4\uac00 \ub9e4\ub3c4 \ubb3c\ub7c9\uc744 \ud761\uc218\ud569\ub2c8\ub2e4. "
                         "\uacf5\uae09 \uacfc\uc789\ub2e4\ub294 \uc2e0\ud638\ub85c, \ud558\ub77d \ubb34\ub825\ud654\uc758 \uc2dc\uc791\uc744 \uc758\ubbf8\ud569\ub2c8\ub2e4."),
             _vpa_pillar("N", "No Supply", "#60a5fa",
                         "\ub9e4\ub3c4 \uc138\ub825\uc774 \uc788\ub294\ub370 \uac70\ub798\ub7c9\uc774 \uc801\uc2b5\ub2c8\ub2e4. "
