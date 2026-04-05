@@ -182,10 +182,10 @@ def build_strategy_section():
         dbc.Row([
             _vpa_pillar("S", "Stopping Volume", "#34d399",
                         "\uc138\ub825 \uc8fc\uccb4\uac00 \ub9e4\ub3c4 \ucc28\uc785\uc790\ub97c \ud300\uc5d0 \ud235\uc2b5\ub2c8\ub2e4. "
-                        "\uacf5\uae09 \uacfc\uc78c\ub2e4\ub294 \uc2e0\ud638\ub85c, \ud558\ub77d \ubb34\ub825\ud654\uc758 \uc2dc\uc791\uc744 \uc758\ubbf8\ud569\ub2c8\ub2e4."),
+                        "\uacf5\uae09 \uacfc\uc789\ub2e4\ub294 \uc2e0\ud638\ub85c, \ud558\ub77d \ubb34\ub825\ud654\uc758 \uc2dc\uc791\uc744 \uc758\ubbf8\ud569\ub2c8\ub2e4."),
             _vpa_pillar("N", "No Supply", "#60a5fa",
                         "\ub9e4\ub3c4 \uc138\ub825\uc774 \uc788\ub294\ub370 \uac70\ub798\ub7c9\uc774 \uc801\uc2b5\ub2c8\ub2e4. "
-                        "\uc2a4\ub9c8\ud2b8 \uba38\ub2c8\uac00 \uc8fc\uc2dd\uc744 \ud770\uc99d \ub098\ub204\uc9c0 \uc54a\uc544 \uc2e4\uc9c8 \uacf5\uae09\uc774 \uc5c6\ub294 \uc0c1\ud0dc."),
+                        "\uc2a4\ub9c8\ud2b8 \uba38\ub2c8\uac00 \uc8fc\uc2dd\uc744 \ud568\ubd80\ub85c \ub098\ub204\uc9c0 \uc54a\uc544 \uc2e4\uc9c8 \uacf5\uae09\uc774 \uc5c6\ub294 \uc0c1\ud0dc."),
             _vpa_pillar("T", "Testing", "#a78bfa",
                         "\uc601\ub9ac\ud55c \uac70\ub798\ub7c9\uc73c\ub85c \uc9c0\uc9c0\uc120\uc744 \ud14c\uc2a4\ud2b8\ud569\ub2c8\ub2e4. "
                         "\ud558\ub77d\ub9cc\ud07c \uacf5\uae09\uc774 \ub098\ud0c0\ub098\uc9c0 \uc54a\uc73c\uba74 \ub9e4\uc218\uc138 \uc720\uc9c0 \ud655\uc778."),
@@ -207,7 +207,7 @@ def build_strategy_section():
                         "borderRadius": "4px", "padding": "1px 7px",
                         "fontSize": "11px", "fontWeight": "700", "marginRight": "8px",
                     }),
-                    html.Span("\ucea0\ub4e4\uc758 \uace0\uc800\uac00 \ucc28\uc774 \u2014 \uc791\uc744\uc218\ub85d \uc800\ud56d \ucf74\ub9bd\ub9ac\uc2a4 \ud604\uc0c1",
+                    html.Span("\uce94\ub4e4\uc758 \uace0\uc800\uac00 \ucc28\uc774 \u2014 \uc791\uc744\uc218\ub85d \uc800\ud56d \ucef4\ud50c\ub809\uc2a4 \ud604\uc0c1",
                               style={"color": "#cbd5e1", "fontSize": "13px"}),
                 ], style={"marginBottom": "10px"}), xs=12, sm=6, md=4),
                 dbc.Col(html.Div([
@@ -225,7 +225,7 @@ def build_strategy_section():
                         "borderRadius": "4px", "padding": "1px 7px",
                         "fontSize": "11px", "fontWeight": "700", "marginRight": "8px",
                     }),
-                    html.Span("\uceac\ub4e4 \ubc94\uc704 \ub0b4 \uc885\uac00\uac00 \uc5b4\ub514\uc5d0 \uc788\ub294\uc9c0 \u2014 0=\uc800\uc810, 1=\uace0\uc810",
+                    html.Span("\uce94\ub4e4 \ubc94\uc704 \ub0b4 \uc885\uac00\uac00 \uc5b4\ub514\uc5d0 \uc788\ub294\uc9c0 \u2014 0=\uc800\uc810, 1=\uace0\uc810",
                               style={"color": "#cbd5e1", "fontSize": "13px"}),
                 ], style={"marginBottom": "10px"}), xs=12, sm=6, md=4),
             ]),
