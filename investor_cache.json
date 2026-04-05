@@ -1,0 +1,491 @@
+{
+  "saved_at": "2026-04-04 18:14",
+  "FRG_BUY": [
+    {
+      "name": "한화솔루션",
+      "ticker": "009830",
+      "close": "39050",
+      "frgn_ntby_qty": 1266097
+    },
+    {
+      "name": "삼성E&A",
+      "ticker": "028050",
+      "close": "40550",
+      "frgn_ntby_qty": 559674
+    },
+    {
+      "name": "삼성전자",
+      "ticker": "005930",
+      "close": "186200",
+      "frgn_ntby_qty": 516352
+    },
+    {
+      "name": "한국전력",
+      "ticker": "015760",
+      "close": "40300",
+      "frgn_ntby_qty": 422694
+    },
+    {
+      "name": "SK하이닉스",
+      "ticker": "000660",
+      "close": "876000",
+      "frgn_ntby_qty": 412740
+    },
+    {
+      "name": "삼성전기",
+      "ticker": "009150",
+      "close": "456000",
+      "frgn_ntby_qty": 314478
+    },
+    {
+      "name": "미래에셋증권",
+      "ticker": "006800",
+      "close": "63100",
+      "frgn_ntby_qty": 278752
+    },
+    {
+      "name": "LG유플러스",
+      "ticker": "032640",
+      "close": "15330",
+      "frgn_ntby_qty": 243625
+    },
+    {
+      "name": "현대로템",
+      "ticker": "064350",
+      "close": "210000",
+      "frgn_ntby_qty": 216926
+    },
+    {
+      "name": "SK텔레콤",
+      "ticker": "017670",
+      "close": "80900",
+      "frgn_ntby_qty": 206595
+    },
+    {
+      "name": "한화시스템",
+      "ticker": "272210",
+      "close": "135400",
+      "frgn_ntby_qty": 162345
+    },
+    {
+      "name": "HMM",
+      "ticker": "011200",
+      "close": "20050",
+      "frgn_ntby_qty": 138185
+    },
+    {
+      "name": "S-Oil",
+      "ticker": "010950",
+      "close": "111400",
+      "frgn_ntby_qty": 109629
+    },
+    {
+      "name": "NAVER",
+      "ticker": "035420",
+      "close": "197500",
+      "frgn_ntby_qty": 106585
+    },
+    {
+      "name": "하이브",
+      "ticker": "352820",
+      "close": "270000",
+      "frgn_ntby_qty": 89090
+    },
+    {
+      "name": "BNK금융지주",
+      "ticker": "138930",
+      "close": "17600",
+      "frgn_ntby_qty": 84011
+    },
+    {
+      "name": "이수페타시스",
+      "ticker": "007660",
+      "close": "102600",
+      "frgn_ntby_qty": 71393
+    },
+    {
+      "name": "삼성전자우",
+      "ticker": "005935",
+      "close": "124400",
+      "frgn_ntby_qty": 64591
+    },
+    {
+      "name": "LG",
+      "ticker": "003550",
+      "close": "86500",
+      "frgn_ntby_qty": 61216
+    },
+    {
+      "name": "NH투자증권",
+      "ticker": "005940",
+      "close": "29950",
+      "frgn_ntby_qty": 58019
+    }
+  ],
+  "FRG_SELL": [
+    {
+      "name": "대우건설",
+      "ticker": "047040",
+      "close": "16810",
+      "frgn_ntby_qty": -584451
+    },
+    {
+      "name": "삼성중공업",
+      "ticker": "010140",
+      "close": "27900",
+      "frgn_ntby_qty": -428512
+    },
+    {
+      "name": "우리금융지주",
+      "ticker": "316140",
+      "close": "31950",
+      "frgn_ntby_qty": -280302
+    },
+    {
+      "name": "대한항공",
+      "ticker": "003490",
+      "close": "23000",
+      "frgn_ntby_qty": -232051
+    },
+    {
+      "name": "HD현대중공업",
+      "ticker": "329180",
+      "close": "479500",
+      "frgn_ntby_qty": -176276
+    },
+    {
+      "name": "하나금융지주",
+      "ticker": "086790",
+      "close": "109700",
+      "frgn_ntby_qty": -160615
+    },
+    {
+      "name": "엘앤에프",
+      "ticker": "066970",
+      "close": "166400",
+      "frgn_ntby_qty": -151176
+    },
+    {
+      "name": "KB금융",
+      "ticker": "105560",
+      "close": "145500",
+      "frgn_ntby_qty": -134658
+    },
+    {
+      "name": "삼성SDI",
+      "ticker": "006400",
+      "close": "438500",
+      "frgn_ntby_qty": -93822
+    },
+    {
+      "name": "카카오",
+      "ticker": "035720",
+      "close": "45200",
+      "frgn_ntby_qty": -80142
+    },
+    {
+      "name": "기업은행",
+      "ticker": "024110",
+      "close": "21350",
+      "frgn_ntby_qty": -66507
+    },
+    {
+      "name": "포스코퓨처엠",
+      "ticker": "003670",
+      "close": "211500",
+      "frgn_ntby_qty": -62727
+    },
+    {
+      "name": "현대건설",
+      "ticker": "000720",
+      "close": "151100",
+      "frgn_ntby_qty": -62580
+    },
+    {
+      "name": "HD건설기계",
+      "ticker": "267270",
+      "close": "146100",
+      "frgn_ntby_qty": -57349
+    },
+    {
+      "name": "유한양행",
+      "ticker": "000100",
+      "close": "92800",
+      "frgn_ntby_qty": -53751
+    },
+    {
+      "name": "JB금융지주",
+      "ticker": "175330",
+      "close": "29200",
+      "frgn_ntby_qty": -48875
+    },
+    {
+      "name": "SK스퀘어",
+      "ticker": "402340",
+      "close": "483000",
+      "frgn_ntby_qty": -42882
+    },
+    {
+      "name": "한국금융지주",
+      "ticker": "071050",
+      "close": "212000",
+      "frgn_ntby_qty": -37870
+    },
+    {
+      "name": "한국항공우주",
+      "ticker": "047810",
+      "close": "182600",
+      "frgn_ntby_qty": -36572
+    },
+    {
+      "name": "LG에너지솔루션",
+      "ticker": "373220",
+      "close": "398500",
+      "frgn_ntby_qty": -36477
+    }
+  ],
+  "ORG_BUY": [
+    {
+      "name": "삼성전자",
+      "ticker": "005930",
+      "close": "186200",
+      "orgn_ntby_qty": 1916117
+    },
+    {
+      "name": "삼성중공업",
+      "ticker": "010140",
+      "close": "27900",
+      "orgn_ntby_qty": 1188420
+    },
+    {
+      "name": "삼성E&A",
+      "ticker": "028050",
+      "close": "40550",
+      "orgn_ntby_qty": 1064209
+    },
+    {
+      "name": "포스코인터내셔널",
+      "ticker": "047050",
+      "close": "85100",
+      "orgn_ntby_qty": 500330
+    },
+    {
+      "name": "한화오션",
+      "ticker": "042660",
+      "close": "128000",
+      "orgn_ntby_qty": 266218
+    },
+    {
+      "name": "HD현대중공업",
+      "ticker": "329180",
+      "close": "479500",
+      "orgn_ntby_qty": 237957
+    },
+    {
+      "name": "엘앤에프",
+      "ticker": "066970",
+      "close": "166400",
+      "orgn_ntby_qty": 164501
+    },
+    {
+      "name": "우리금융지주",
+      "ticker": "316140",
+      "close": "31950",
+      "orgn_ntby_qty": 148801
+    },
+    {
+      "name": "하나금융지주",
+      "ticker": "086790",
+      "close": "109700",
+      "orgn_ntby_qty": 126151
+    },
+    {
+      "name": "미래에셋증권",
+      "ticker": "006800",
+      "close": "63100",
+      "orgn_ntby_qty": 122832
+    },
+    {
+      "name": "HD건설기계",
+      "ticker": "267270",
+      "close": "146100",
+      "orgn_ntby_qty": 113537
+    },
+    {
+      "name": "삼성전자우",
+      "ticker": "005935",
+      "close": "124400",
+      "orgn_ntby_qty": 97444
+    },
+    {
+      "name": "SK텔레콤",
+      "ticker": "017670",
+      "close": "80900",
+      "orgn_ntby_qty": 77952
+    },
+    {
+      "name": "LIG넥스원",
+      "ticker": "079550",
+      "close": "860000",
+      "orgn_ntby_qty": 73171
+    },
+    {
+      "name": "SK하이닉스",
+      "ticker": "000660",
+      "close": "876000",
+      "orgn_ntby_qty": 67109
+    },
+    {
+      "name": "삼성전기",
+      "ticker": "009150",
+      "close": "456000",
+      "orgn_ntby_qty": 64322
+    },
+    {
+      "name": "한화솔루션",
+      "ticker": "009830",
+      "close": "39050",
+      "orgn_ntby_qty": 61803
+    },
+    {
+      "name": "SK이노베이션",
+      "ticker": "096770",
+      "close": "118200",
+      "orgn_ntby_qty": 60368
+    },
+    {
+      "name": "삼성SDI",
+      "ticker": "006400",
+      "close": "438500",
+      "orgn_ntby_qty": 55246
+    },
+    {
+      "name": "KB금융",
+      "ticker": "105560",
+      "close": "145500",
+      "orgn_ntby_qty": 53198
+    }
+  ],
+  "ORG_SELL": [
+    {
+      "name": "한국전력",
+      "ticker": "015760",
+      "close": "40300",
+      "orgn_ntby_qty": -1400814
+    },
+    {
+      "name": "대한항공",
+      "ticker": "003490",
+      "close": "23000",
+      "orgn_ntby_qty": -1326002
+    },
+    {
+      "name": "LG유플러스",
+      "ticker": "032640",
+      "close": "15330",
+      "orgn_ntby_qty": -354530
+    },
+    {
+      "name": "대우건설",
+      "ticker": "047040",
+      "close": "16810",
+      "orgn_ntby_qty": -337389
+    },
+    {
+      "name": "카카오",
+      "ticker": "035720",
+      "close": "45200",
+      "orgn_ntby_qty": -316656
+    },
+    {
+      "name": "카카오뱅크",
+      "ticker": "323410",
+      "close": "23450",
+      "orgn_ntby_qty": -253367
+    },
+    {
+      "name": "기업은행",
+      "ticker": "024110",
+      "close": "21350",
+      "orgn_ntby_qty": -239244
+    },
+    {
+      "name": "BNK금융지주",
+      "ticker": "138930",
+      "close": "17600",
+      "orgn_ntby_qty": -215653
+    },
+    {
+      "name": "한국타이어앤테크놀로지",
+      "ticker": "161390",
+      "close": "52000",
+      "orgn_ntby_qty": -178669
+    },
+    {
+      "name": "이수페타시스",
+      "ticker": "007660",
+      "close": "102600",
+      "orgn_ntby_qty": -134390
+    },
+    {
+      "name": "NH투자증권",
+      "ticker": "005940",
+      "close": "29950",
+      "orgn_ntby_qty": -126435
+    },
+    {
+      "name": "현대건설",
+      "ticker": "000720",
+      "close": "151100",
+      "orgn_ntby_qty": -96900
+    },
+    {
+      "name": "LG전자",
+      "ticker": "066570",
+      "close": "108300",
+      "orgn_ntby_qty": -83259
+    },
+    {
+      "name": "기아",
+      "ticker": "000270",
+      "close": "150200",
+      "orgn_ntby_qty": -81302
+    },
+    {
+      "name": "한미반도체",
+      "ticker": "042700",
+      "close": "260000",
+      "orgn_ntby_qty": -80632
+    },
+    {
+      "name": "포스코퓨처엠",
+      "ticker": "003670",
+      "close": "211500",
+      "orgn_ntby_qty": -77989
+    },
+    {
+      "name": "NAVER",
+      "ticker": "035420",
+      "close": "197500",
+      "orgn_ntby_qty": -75301
+    },
+    {
+      "name": "LG화학",
+      "ticker": "051910",
+      "close": "304500",
+      "orgn_ntby_qty": -68531
+    },
+    {
+      "name": "현대모비스",
+      "ticker": "012330",
+      "close": "388500",
+      "orgn_ntby_qty": -54393
+    },
+    {
+      "name": "현대글로비스",
+      "ticker": "086280",
+      "close": "210000",
+      "orgn_ntby_qty": -52646
+    }
+  ]
+}

@@ -232,6 +232,16 @@ def get_investor_realtime(top: int = 20) -> dict:
         "ORG_BUY":  org[:top],
         "ORG_SELL": org[-top:][::-1],
     }
+
+    # API가 빈 데이터 반환 시 커밋된 캐시 파일로 폴백
+    if not result["FRG_BUY"]:
+        try:
+            cache_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "investor_cache.json")
+            with open(cache_path, "r", encoding="utf-8") as f:
+                result = json.load(f)
+        except Exception:
+            pass
+
     _cache_set("investor", result)
     return result
 

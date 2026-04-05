@@ -22,7 +22,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install finance-datareader pandas
+          pip install finance-datareader pandas requests python-dotenv
 
       - name: Remove old CSV files
         run: |
@@ -34,10 +34,26 @@ jobs:
       - name: Run VPA scanner
         run: python vpa_scanner.py
 
+      - name: Fetch investor data
+        env:
+          KIS_APP_KEY: ${{ secrets.KIS_APP_KEY }}
+          KIS_APP_SECRET: ${{ secrets.KIS_APP_SECRET }}
+          KIS_IS_REAL: "true"
+        run: |
+          python -c "
+import json, sys
+sys.stdout.reconfigure(encoding='utf-8')
+from kis_api import get_investor_realtime
+data = get_investor_realtime(top=20)
+with open('investor_cache.json', 'w', encoding='utf-8') as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+print('investor_cache.json saved:', data.get('saved_at',''))
+"
+
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -f signals_*.csv vpa_signals_*.csv
+          git add -f signals_*.csv vpa_signals_*.csv investor_cache.json
           git diff --staged --quiet || git commit -m "chore: auto scan $(date '+%Y-%m-%d')"
           git push
