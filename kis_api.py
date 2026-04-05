@@ -179,6 +179,59 @@ def get_investor_net_buy(market: str = "J", investor: str = "FRG", top: int = 10
     return entry.get("data", [])[:top], entry.get("saved_at", "")
 
 
+def get_investor_realtime(top: int = 20) -> dict:
+    """
+    런타임 투자자 순매수 데이터. 단일 API 호출로 빠르게 반환.
+    반환: {"saved_at": str, "FRG_BUY": [], "FRG_SELL": [], "ORG_BUY": [], "ORG_SELL": []}
+    """
+    cached = _cache_get("investor")
+    if cached is not None:
+        return cached
+
+    from concurrent.futures import ThreadPoolExecutor
+
+    def _fetch(investor):
+        items, saved_at = get_investor_net_buy("J", investor, top)
+        return investor, items, saved_at
+
+    with ThreadPoolExecutor(max_workers=2) as ex:
+        f_frg = ex.submit(_fetch, "FRG")
+        f_org = ex.submit(_fetch, "ORG")
+
+    _, frg_raw, saved_at = f_frg.result()
+    _, org_raw, _        = f_org.result()
+
+    def _transform(items, qty_key):
+        result = []
+        for item in items:
+            try:
+                qty = int(item.get(qty_key, 0) or 0)
+            except (ValueError, TypeError):
+                qty = 0
+            result.append({
+                "name":   item.get("hts_kor_isnm", ""),
+                "ticker": item.get("mksc_shrn_iscd", ""),
+                "close":  item.get("stck_prpr", "0"),
+                qty_key:  qty,
+            })
+        return result
+
+    frg = sorted(_transform(frg_raw, "frgn_ntby_qty"),
+                 key=lambda x: x["frgn_ntby_qty"], reverse=True)
+    org = sorted(_transform(org_raw, "orgn_ntby_qty"),
+                 key=lambda x: x["orgn_ntby_qty"], reverse=True)
+
+    result = {
+        "saved_at": saved_at,
+        "FRG_BUY":  frg[:top],
+        "FRG_SELL": frg[-top:][::-1],
+        "ORG_BUY":  org[:top],
+        "ORG_SELL": org[-top:][::-1],
+    }
+    _cache_set("investor", result)
+    return result
+
+
 # ── 거래량 순위 ────────────────────────────────────────────
 
 def get_volume_ranking_split(top: int = 20) -> tuple[list[dict], list[dict]]:

@@ -2,7 +2,7 @@
 from dash import html, dcc
 import dash_bootstrap_components as dbc
 import plotly.graph_objects as go
-from kis_api import get_volume_ranking_split, load_investor_ranking, get_index_data, get_overseas_data, get_fear_greed, get_sector_data
+from kis_api import get_volume_ranking_split, get_investor_realtime, get_index_data, get_overseas_data, get_fear_greed, get_sector_data
 
 
 # ── Index cards ────────────────────────────────────────────
@@ -560,32 +560,23 @@ def layout_domestic() -> html.Div:
     from concurrent.futures import ThreadPoolExecutor
 
     with ThreadPoolExecutor(max_workers=3) as ex:
-        f_indices = ex.submit(_safe, get_index_data,           default=[])
-        f_vol     = ex.submit(_safe, get_volume_ranking_split, default=([], []), top=20)
+        f_indices  = ex.submit(_safe, get_index_data,           default=[])
+        f_vol      = ex.submit(_safe, get_volume_ranking_split, default=([], []), top=20)
+        f_investor = ex.submit(_safe, get_investor_realtime,    default={}, top=20)
 
     indices = f_indices.result()
     vol_kp, vol_kq = f_vol.result()
+    r = f_investor.result()
 
-    r         = load_investor_ranking()
-    scan_date = r.get("scan_date", "")
-    saved_at  = r.get("saved_at",  "")
-    date_label = (f"{scan_date[:4]}-{scan_date[4:6]}-{scan_date[6:]} \uae30\uc900"
-                  if scan_date else "")
+    saved_at   = r.get("saved_at", "")
+    date_label = saved_at
 
     vol_kp_rows = [_vol_row(item, i + 1) for i, item in enumerate(vol_kp)]
     vol_kq_rows = [_vol_row(item, i + 1) for i, item in enumerate(vol_kq)]
 
-    no_inv = not r.get("FRG_KOSPI_BUY")
-    subtitle = (
-        html.P([
-            "\uc678\uad6d\uc778/\uae30\uad00 \ub370\uc774\ud130\uac00 \uc5c6\uc2b5\ub2c8\ub2e4.  ",
-            html.Code("python market_scanner.py",
-                      style={"color": "#94a3b8", "fontSize": "12px"}),
-            "  \uc2e4\ud589 \ud6c4 \uc0c8\ub85c\uace0\uce68\ud558\uc138\uc694.",
-        ], style={"color": "#555", "fontSize": "13px", "marginBottom": "28px"})
-        if no_inv else
-        html.P(f"\ub370\uc774\ud130 \uc2a4\uce94: {saved_at}  ({date_label})",
-               style={"color": "#374151", "fontSize": "12px", "marginBottom": "28px"})
+    subtitle = html.P(
+        f"\ub370\uc774\ud130 \uae30\uc900: {saved_at}" if saved_at else "",
+        style={"color": "#374151", "fontSize": "12px", "marginBottom": "28px"}
     )
 
     return html.Div([
@@ -599,10 +590,10 @@ def layout_domestic() -> html.Div:
             dbc.Col(
                 _investor_card(
                     "\uc678\uad6d\uc778  TOP 20", "#34d399", date_label,
-                    r.get("FRG_KOSPI_BUY",   []),
-                    r.get("FRG_KOSPI_SELL",  []),
-                    r.get("FRG_KOSDAQ_BUY",  []),
-                    r.get("FRG_KOSDAQ_SELL", []),
+                    r.get("FRG_BUY",  []),
+                    r.get("FRG_SELL", []),
+                    r.get("FRG_BUY",  []),
+                    r.get("FRG_SELL", []),
                     "frgn_ntby_qty",
                 ),
                 xs=12, lg=4, className="mb-4",
@@ -610,10 +601,10 @@ def layout_domestic() -> html.Div:
             dbc.Col(
                 _investor_card(
                     "\uae30\uad00  TOP 20", "#f59e0b", date_label,
-                    r.get("ORG_KOSPI_BUY",   []),
-                    r.get("ORG_KOSPI_SELL",  []),
-                    r.get("ORG_KOSDAQ_BUY",  []),
-                    r.get("ORG_KOSDAQ_SELL", []),
+                    r.get("ORG_BUY",  []),
+                    r.get("ORG_SELL", []),
+                    r.get("ORG_BUY",  []),
+                    r.get("ORG_SELL", []),
                     "orgn_ntby_qty",
                 ),
                 xs=12, lg=4, className="mb-4",
