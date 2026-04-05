@@ -1,10 +1,10 @@
-import FinanceDataReader as fdr
 import pandas as pd
 from datetime import datetime, timedelta
 
 
 def get_stock_list() -> pd.DataFrame:
     """코스피 + 코스닥 전체 종목 리스트 반환"""
+    import FinanceDataReader as fdr
     kospi  = fdr.StockListing("KOSPI")[["Code", "Name"]].copy()
     kosdaq = fdr.StockListing("KOSDAQ")[["Code", "Name"]].copy()
     kospi["market"]  = "KOSPI"
@@ -17,6 +17,7 @@ def get_stock_list() -> pd.DataFrame:
 
 def get_ohlcv(ticker: str, days: int = 250) -> pd.DataFrame:
     """종목의 최근 N 거래일 OHLCV 데이터 반환"""
+    import FinanceDataReader as fdr
     start = (datetime.today() - timedelta(days=days * 2)).strftime("%Y-%m-%d")
     try:
         df = fdr.DataReader(ticker, start)
