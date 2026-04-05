@@ -165,6 +165,17 @@ def layout():
                 "/sepa",
                 ["VCP", "\uc774\uc911\ubc14\ub2e5", "\ud50c\ub7ab \ubca0\uc774\uc2a4", "\ud53c\ubd07 \uc148\uc5c5"],
             ),
+            _strategy_card(
+                "VPA",
+                "\uac70\ub798\ub7c9 \ud22c\uc790 \ubd84\uc11d",
+                "#34d399",
+                "\uc560\ub098 \ucfe8\ub9c1\uc758 VPA \uae30\ubc95\uc744 \uae30\ubc18\uc73c\ub85c "
+                "\uc138\ub825 \uc8fc\uccb4\uc758 \uc2e4\uc9c8 \ub9e4\uc218\uc138\ub97c \uac10\uc9c0\ud569\ub2c8\ub2e4. "
+                "\uc8fc\uac00\uc640 \uac70\ub798\ub7c9\uc758 \uad00\uacc4\ub97c \ubd84\uc11d\ud574 "
+                "\uc2a4\ub9c8\ud2b8 \uba38\ub2c8\uc758 \ud589\ub3d9\uc744 \ud3ec\ucc29\ud569\ub2c8\ub2e4.",
+                "/vpa",
+                ["\uc2a4\ud1a0\ud551 \ubcfc\ub968", "\uacf5\uae09 \ubd80\uc7ac", "\ud14c\uc2a4\ud305", "\ub178\ub825 vs \uacb0\uacfc"],
+            ),
         ]),
 
         # ── Footer note ───────────────────────────────────────
