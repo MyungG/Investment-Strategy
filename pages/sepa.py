@@ -2,6 +2,12 @@ import glob
 import pandas as pd
 from dash import dcc, html, no_update
 import dash_bootstrap_components as dbc
+from data_fetcher import get_ohlcv
+from strategy import (
+    check_trend_template, check_vcp, check_double_bottom,
+    check_breakout, check_pivot
+)
+from components.chart_plotly import build_chart
 
 
 PATTERN_COLORS = {
@@ -39,9 +45,6 @@ def load_latest_signals() -> pd.DataFrame:
 
 
 def _reason_text(ticker: str, row: pd.Series) -> str:
-    from data_fetcher import get_ohlcv
-    from strategy import (check_trend_template, check_vcp, check_double_bottom,
-                          check_breakout, check_pivot)
     df = get_ohlcv(ticker, days=250)
     if df.empty or len(df) < 200:
         return ""
