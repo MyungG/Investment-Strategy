@@ -5,8 +5,6 @@ __pycache__/
 .kis_token.json
 .kis_investor_cache.json
 .kis_ranking_cache.json
-signals_*.csv
-vpa_signals_*.csv
 *.log
 .DS_Store
 app_log.txt
