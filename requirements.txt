@@ -4,6 +4,6 @@ plotly==5.22.0
 pandas==2.2.2
 requests==2.32.3
 python-dotenv==1.0.0
-FinanceDataReader==0.9.110
+FinanceDataReader
 yfinance==1.2.0
 gunicorn==21.2.0
