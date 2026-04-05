@@ -547,33 +547,24 @@ def _investor_card(title: str, color: str, date_label: str,
     })
 
 
-# ── Layout ─────────────────────────────────────────────────
+# ── Layouts ────────────────────────────────────────────────
 
-def layout() -> html.Div:
+def _safe(fn, *args, default=None, **kwargs):
     try:
-        indices = get_index_data()
+        return fn(*args, **kwargs)
     except Exception:
-        indices = []
+        return default
 
-    try:
-        overseas = get_overseas_data()
-    except Exception:
-        overseas = []
 
-    try:
-        fg = get_fear_greed()
-    except Exception:
-        fg = {}
+def layout_domestic() -> html.Div:
+    from concurrent.futures import ThreadPoolExecutor
 
-    try:
-        sectors = get_sector_data()
-    except Exception:
-        sectors = []
+    with ThreadPoolExecutor(max_workers=3) as ex:
+        f_indices = ex.submit(_safe, get_index_data,           default=[])
+        f_vol     = ex.submit(_safe, get_volume_ranking_split, default=([], []), top=20)
 
-    try:
-        vol_kp, vol_kq = get_volume_ranking_split(top=20)
-    except Exception:
-        vol_kp, vol_kq = [], []
+    indices = f_indices.result()
+    vol_kp, vol_kq = f_vol.result()
 
     r         = load_investor_ranking()
     scan_date = r.get("scan_date", "")
@@ -597,7 +588,9 @@ def layout() -> html.Div:
                style={"color": "#374151", "fontSize": "12px", "marginBottom": "28px"})
     )
 
-    domestic_tab = html.Div([
+    return html.Div([
+        html.H3("\uad6d\ub0b4\uc8fc\uc2dd",
+                style={"color": "white", "fontWeight": "700", "marginBottom": "20px"}),
         _index_cards(indices) if indices else html.Div(),
         subtitle,
         dbc.Row([
@@ -626,26 +619,24 @@ def layout() -> html.Div:
                 xs=12, lg=4, className="mb-4",
             ),
         ], style={"display": "flex", "flexWrap": "wrap", "alignItems": "stretch"}),
-    ], style={"paddingTop": "24px"})
+    ], style={"padding": "32px 36px", "minHeight": "100vh", "background": "#0d1117"})
 
-    overseas_tab = html.Div([
-        _overseas_section(overseas, fg),
-        _sector_heatmap(sectors),
-    ], style={"paddingTop": "24px"})
+
+def layout_overseas() -> html.Div:
+    from concurrent.futures import ThreadPoolExecutor
+
+    with ThreadPoolExecutor(max_workers=3) as ex:
+        f_overseas = ex.submit(_safe, get_overseas_data, default=[])
+        f_fg       = ex.submit(_safe, get_fear_greed,    default={})
+        f_sectors  = ex.submit(_safe, get_sector_data,   default=[])
+
+    overseas = f_overseas.result()
+    fg       = f_fg.result()
+    sectors  = f_sectors.result()
 
     return html.Div([
-        html.H3("\uc2dc\uc7a5\uc815\ubcf4",
+        html.H3("\ud574\uc678\uc8fc\uc2dd",
                 style={"color": "white", "fontWeight": "700", "marginBottom": "20px"}),
-
-        dbc.Tabs([
-            dbc.Tab(domestic_tab,  label="\uad6d\ub0b4\uc8fc\uc2dd",
-                    tab_style={"fontSize": "13px"},
-                    active_label_style={"color": "#fb923c", "fontWeight": "700"}),
-            dbc.Tab(overseas_tab, label="\ud574\uc678\uc8fc\uc2dd",
-                    tab_style={"fontSize": "13px"},
-                    active_label_style={"color": "#60a5fa", "fontWeight": "700"}),
-        ], style={"borderBottom": "1px solid #21262d"}),
-
-        dcc.Interval(id="market-refresh", interval=5 * 60 * 1000, n_intervals=0),
-
+        _overseas_section(overseas, fg),
+        _sector_heatmap(sectors),
     ], style={"padding": "32px 36px", "minHeight": "100vh", "background": "#0d1117"})

@@ -345,6 +345,22 @@ def get_index_data() -> list[dict]:
     return result
 
 
+# ── 간단한 메모리 캐시 ────────────────────────────────────
+_cache: dict = {}
+_CACHE_TTL = 300  # 5분
+
+
+def _cache_get(key: str):
+    entry = _cache.get(key)
+    if entry and time.time() - entry["ts"] < _CACHE_TTL:
+        return entry["data"]
+    return None
+
+
+def _cache_set(key: str, data):
+    _cache[key] = {"data": data, "ts": time.time()}
+
+
 # ── 해외 지수/환율/원자재 ──────────────────────────────────
 
 def get_overseas_data() -> list[dict]:
@@ -352,8 +368,13 @@ def get_overseas_data() -> list[dict]:
     미국 3대 지수, 닛케이, USD/KRW, WTI, 금 반환.
     반환: [{"name":..., "close":..., "change":..., "chg_rate":..., "dates":[], "closes":[]}, ...]
     """
+    cached = _cache_get("overseas")
+    if cached is not None:
+        return cached
+
     import FinanceDataReader as fdr
     from datetime import date, timedelta
+    from concurrent.futures import ThreadPoolExecutor
 
     targets = [
         ("S&P 500",     "^GSPC"),
@@ -368,22 +389,20 @@ def get_overseas_data() -> list[dict]:
         ("US 10Y",      "^TNX"),
     ]
     start = (date.today() - timedelta(days=90)).strftime("%Y-%m-%d")
-    result = []
 
-    for name, code in targets:
+    def _fetch(name, code):
         try:
             df = fdr.DataReader(code, start).dropna(subset=["Close"])
             if len(df) < 2:
-                continue
-            close  = float(df["Close"].iloc[-1])
-            prev   = float(df["Close"].iloc[-2])
-            # US 10Y: Yahoo ^TNX은 실제 금리 × 10 으로 표시
+                return None
+            close = float(df["Close"].iloc[-1])
+            prev  = float(df["Close"].iloc[-2])
             if name == "US 10Y":
                 close /= 10
                 prev  /= 10
             change   = close - prev
             chg_rate = (change / prev * 100) if prev else 0.0
-            result.append({
+            return {
                 "name":     name,
                 "close":    close,
                 "change":   change,
@@ -391,9 +410,19 @@ def get_overseas_data() -> list[dict]:
                 "dates":    df.index.strftime("%Y-%m-%d").tolist(),
                 "closes":   [v / 10 if name == "US 10Y" else v
                              for v in df["Close"].tolist()],
-            })
+            }
         except Exception:
-            pass
+            return None
+
+    with ThreadPoolExecutor(max_workers=10) as ex:
+        futures = [ex.submit(_fetch, name, code) for name, code in targets]
+
+    order = {name: i for i, (name, _) in enumerate(targets)}
+    result = sorted(
+        [f.result() for f in futures if f.result() is not None],
+        key=lambda x: order.get(x["name"], 99),
+    )
+    _cache_set("overseas", result)
     return result
 
 
@@ -419,6 +448,10 @@ def get_sector_data() -> list[dict]:
     GICS 11개 섹터 + 개별 종목 등락률 반환 (yfinance 배치).
     반환: [{"name":..., "avg_chg":..., "stocks":[{"ticker":..,"chg_rate":..}, ...]}, ...]
     """
+    cached = _cache_get("sectors")
+    if cached is not None:
+        return cached
+
     import yfinance as yf
 
     all_tickers = [t for stocks in _GICS_SECTORS.values() for t in stocks]
@@ -446,7 +479,9 @@ def get_sector_data() -> list[dict]:
         avg    = sum(s["chg_rate"] for s in stocks) / len(stocks) if stocks else 0.0
         result.append({"name": sector_name, "avg_chg": avg, "stocks": stocks})
 
-    return sorted(result, key=lambda x: x["avg_chg"], reverse=True)
+    result = sorted(result, key=lambda x: x["avg_chg"], reverse=True)
+    _cache_set("sectors", result)
+    return result
 
 
 # ── CNN 공포탐욕 지수 ──────────────────────────────────────

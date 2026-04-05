@@ -57,7 +57,8 @@ SIDEBAR = html.Div([
 
     # Market section
     _nav_section("\uc2dc\uc7a5"),
-    _nav_link("\uc2dc\uc7a5\uc815\ubcf4", "/market"),
+    _nav_link("\uad6d\ub0b4\uc8fc\uc2dd", "/market/domestic"),
+    _nav_link("\ud574\uc678\uc8fc\uc2dd", "/market/overseas"),
 
     # Strategy section
     _nav_section("\uc804\ub7b5"),
@@ -132,8 +133,10 @@ app.clientside_callback(
 def route(pathname):
     if pathname == "/sepa":
         return sepa.layout()
-    if pathname == "/market":
-        return market.layout()
+    if pathname == "/market/domestic":
+        return market.layout_domestic()
+    if pathname == "/market/overseas":
+        return market.layout_overseas()
     if pathname == "/vpa":
         return vpa.layout()
     return home.layout()
