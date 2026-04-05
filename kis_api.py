@@ -19,8 +19,12 @@ BASE_URL = (
     "https://openapivts.koreainvestment.com:29443"
 )
 
+# ── 파일 캐시 경로 (Vercel 등 읽기전용 환경은 /tmp 사용) ──
+_BASE_DIR = os.path.dirname(__file__)
+_CACHE_DIR = _BASE_DIR if os.access(_BASE_DIR, os.W_OK) else "/tmp"
+
 # ── Token 관리 (파일 캐시) ────────────────────────────────
-_TOKEN_FILE = os.path.join(os.path.dirname(__file__), ".kis_token.json")
+_TOKEN_FILE = os.path.join(_CACHE_DIR, ".kis_token.json")
 
 
 def get_token() -> str:
@@ -81,7 +85,7 @@ def _get(path: str, tr_id: str, params: dict) -> dict:
 
 
 # ── 투자자 순매수 캐시 ────────────────────────────────────
-_INVESTOR_CACHE_FILE = os.path.join(os.path.dirname(__file__), ".kis_investor_cache.json")
+_INVESTOR_CACHE_FILE = os.path.join(_CACHE_DIR, ".kis_investor_cache.json")
 
 
 def _load_investor_cache() -> dict:
@@ -289,7 +293,7 @@ def get_volume_ranking(market: str = "J", top: int = 10) -> list[dict]:
 
 
 # ── 전일 기준 외국인/기관 순매수 랭킹 빌더 ─────────────────
-_RANKING_CACHE_FILE = os.path.join(os.path.dirname(__file__), ".kis_ranking_cache.json")
+_RANKING_CACHE_FILE = os.path.join(_CACHE_DIR, ".kis_ranking_cache.json")
 
 
 def build_investor_ranking(n: int = 100, top: int = 20) -> None:
