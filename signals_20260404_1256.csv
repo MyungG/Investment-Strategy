@@ -1,0 +1,10 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market,pivot_price,distance,vol_dryup
+028670,팬오션,5260,5032,+4.5%,1.3x,6/7,Double Bottom,5000.0,4820.0,5330.0,-1.3%,KOSPI,,,
+395400,SK리츠,6430,5835,+10.2%,0.3x,7/7,Pivot Setup,,,,,KOSPI,6540.0,-1.7%,0.7x avg
+009180,한솔로지스틱스,2970,2906,+2.2%,0.5x,6/7,Double Bottom,2850.0,2900.0,2985.0,-0.5%,KOSPI,,,
+327260,RF머트리얼즈,76400,48921,+56.2%,0.7x,7/7,Pivot Setup,,,,,KOSDAQ,75950.0,+0.6%,0.6x avg
+019210,와이지-원,14300,10107,+41.5%,0.7x,7/7,Pivot Setup,,,,,KOSDAQ,14500.0,-1.4%,0.8x avg
+353810,이지바이오,7470,7124,+4.9%,1.2x,6/7,Double Bottom,6600.0,6840.0,7220.0,+3.5%,KOSDAQ,,,
+289080,SV인베스트먼트,3720,3283,+13.3%,0.3x,7/7,Double Bottom,3065.0,3190.0,3660.0,+1.6%,KOSDAQ,,,
+066360,체리부로,1142,960,+18.9%,0.3x,7/7,Double Bottom,1018.0,1051.0,1144.0,-0.2%,KOSDAQ,,,
+081580,성우전자,3095,2853,+8.5%,0.6x,6/7,Double Bottom,2820.0,2830.0,3100.0,-0.2%,KOSDAQ,,,
