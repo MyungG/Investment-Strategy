@@ -86,7 +86,7 @@ def layout():
                         "WebkitBackgroundClip": "text",
                         "WebkitTextFillColor": "transparent",
                     }),
-                ], style={
+                ], className="hero-title", style={
                     "color": "white", "fontWeight": "800",
                     "fontSize": "42px", "lineHeight": "1.2",
                     "marginBottom": "20px",
@@ -112,7 +112,7 @@ def layout():
                     }
                 ),
             ]),
-        ], style={
+        ], className="hero-section", style={
             "padding": "72px 0 60px",
             "borderBottom": "1px solid #21262d",
             "marginBottom": "60px",
@@ -189,4 +189,4 @@ def layout():
             }
         ),
 
-    ], style={"padding": "40px 48px", "minHeight": "100vh", "background": "#0d1117"})
+    ], className="page-wrap-home")

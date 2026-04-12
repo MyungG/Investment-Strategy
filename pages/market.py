@@ -610,7 +610,7 @@ def layout_domestic() -> html.Div:
                 xs=12, lg=4, className="mb-4",
             ),
         ], style={"display": "flex", "flexWrap": "wrap", "alignItems": "stretch"}),
-    ], style={"padding": "32px 36px", "minHeight": "100vh", "background": "#0d1117"})
+    ], className="page-wrap")
 
 
 def layout_overseas() -> html.Div:
@@ -630,4 +630,4 @@ def layout_overseas() -> html.Div:
                 style={"color": "white", "fontWeight": "700", "marginBottom": "20px"}),
         _overseas_section(overseas, fg),
         _sector_heatmap(sectors),
-    ], style={"padding": "32px 36px", "minHeight": "100vh", "background": "#0d1117"})
+    ], className="page-wrap")

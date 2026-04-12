@@ -86,39 +86,66 @@ def _build_sidebar(pathname):
     ]
 
 
-# ── Sidebar ────────────────────────────────────────────────
-SIDEBAR = html.Div(
-    id="sidebar-nav",
-    className="sidebar-nav",
-    style={
-        "width": "200px",
-        "minHeight": "100vh",
-        "background": "#0d1117",
-        "borderRight": "1px solid #21262d",
-        "padding": "28px 12px",
-        "position": "fixed",
-        "top": 0, "left": 0,
-        "fontFamily": "Inter, sans-serif",
-    }
-)
-
-
+# ── Layout ─────────────────────────────────────────────────
 app.layout = html.Div([
     dcc.Location(id="url"),
-    SIDEBAR,
-    html.Div(
-        id="page-content",
-        style={
-            "marginLeft": "200px",
-            "fontFamily": "Inter, sans-serif",
-            "background": "#0d1117",
-            "minHeight": "100vh",
-        }
-    ),
+
+    # Mobile topbar (hamburger + logo)
+    html.Div([
+        html.A([
+            html.Span("SF", style={
+                "background": "linear-gradient(135deg, #6366f1, #8b5cf6)",
+                "color": "white", "borderRadius": "6px",
+                "padding": "3px 8px", "fontWeight": "800",
+                "fontSize": "15px", "marginRight": "6px",
+            }),
+            html.Span("SignalFinder", style={
+                "color": "white", "fontWeight": "700", "fontSize": "14px",
+            }),
+        ], href="/", style={"textDecoration": "none", "display": "flex", "alignItems": "center"}),
+        html.Button("\u2630", id="hamburger-btn", n_clicks=0, style={
+            "background": "none", "border": "none", "color": "white",
+            "fontSize": "22px", "cursor": "pointer", "padding": "4px 8px",
+        }),
+    ], className="mobile-topbar"),
+
+    # Sidebar overlay (mobile)
+    html.Div(id="sidebar-overlay", className="sidebar-overlay", n_clicks=0),
+
+    # Sidebar
+    html.Div(id="sidebar-nav", className="sidebar-nav"),
+
+    # Main content
+    html.Div(id="page-content", className="main-content"),
+
     dcc.Store(id="_scroll-dummy"),
     dcc.Store(id="_vpa-scroll-dummy"),
+    dcc.Store(id="_sidebar-open", data=False),
 ], style={"background": "#0d1117"})
 
+
+app.clientside_callback(
+    """
+    function(h_clicks, o_clicks, is_open) {
+        var ctx = window.dash_clientside.callback_context;
+        if (!ctx.triggered.length) return [false, 'sidebar-nav', 'sidebar-overlay'];
+        var tid = ctx.triggered[0].prop_id;
+        var new_open = tid.includes('sidebar-overlay') ? false : !is_open;
+        return [
+            new_open,
+            new_open ? 'sidebar-nav sidebar-open' : 'sidebar-nav',
+            new_open ? 'sidebar-overlay sidebar-open' : 'sidebar-overlay'
+        ];
+    }
+    """,
+    Output("_sidebar-open", "data"),
+    Output("sidebar-nav", "className"),
+    Output("sidebar-overlay", "className"),
+    Input("hamburger-btn", "n_clicks"),
+    Input("sidebar-overlay", "n_clicks"),
+    dash.State("_sidebar-open", "data"),
+    prevent_initial_call=True,
+)
 
 app.clientside_callback(
     """

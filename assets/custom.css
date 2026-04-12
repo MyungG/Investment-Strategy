@@ -1,3 +1,4 @@
+/* ── Sidebar link reset ─────────────────────────────────── */
 #sidebar-nav a,
 #sidebar-nav a:link,
 #sidebar-nav a:visited,
@@ -12,7 +13,162 @@
     outline: none !important;
     color: #94a3b8 !important;
 }
-
 #sidebar-nav a:hover {
     opacity: 0.75;
+}
+
+/* ── Sidebar ────────────────────────────────────────────── */
+.sidebar-nav {
+    width: 200px;
+    min-height: 100vh;
+    background: #0d1117;
+    border-right: 1px solid #21262d;
+    padding: 28px 12px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: Inter, sans-serif;
+    z-index: 1000;
+    transition: transform 0.25s ease;
+    overflow-y: auto;
+}
+
+/* ── Main content ───────────────────────────────────────── */
+.main-content {
+    margin-left: 200px;
+    font-family: Inter, sans-serif;
+    background: #0d1117;
+    min-height: 100vh;
+}
+
+/* ── Page inner padding ─────────────────────────────────── */
+.page-wrap {
+    padding: 32px 36px;
+    min-height: 100vh;
+    background: #0d1117;
+}
+.page-wrap-home {
+    padding: 40px 48px;
+    min-height: 100vh;
+    background: #0d1117;
+}
+
+/* ── Mobile topbar (hidden on desktop) ─────────────────── */
+.mobile-topbar {
+    display: none;
+}
+
+/* ── Sidebar overlay (hidden on desktop) ───────────────── */
+.sidebar-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+}
+
+/* ── Chart responsive ───────────────────────────────────── */
+.js-plotly-plot .plotly {
+    width: 100% !important;
+}
+
+/* ── Table horizontal scroll on mobile ─────────────────── */
+.table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* ════════════════════════════════════════════════════════════
+   TABLET  768px ~ 1199px
+   ════════════════════════════════════════════════════════════ */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .sidebar-nav {
+        width: 160px;
+    }
+    .main-content {
+        margin-left: 160px;
+    }
+    .page-wrap {
+        padding: 28px 24px;
+    }
+    .page-wrap-home {
+        padding: 32px 28px;
+    }
+}
+
+/* ════════════════════════════════════════════════════════════
+   MOBILE  < 768px
+   ════════════════════════════════════════════════════════════ */
+@media (max-width: 767px) {
+
+    /* Sidebar slides out off-screen */
+    .sidebar-nav {
+        transform: translateX(-220px);
+        width: 220px;
+        padding-top: 72px;
+        box-shadow: none;
+    }
+    .sidebar-nav.sidebar-open {
+        transform: translateX(0);
+        box-shadow: 4px 0 24px rgba(0,0,0,0.6);
+    }
+
+    /* Overlay */
+    .sidebar-overlay {
+        display: block;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.25s ease;
+    }
+    .sidebar-overlay.sidebar-open {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    /* Mobile topbar */
+    .mobile-topbar {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 56px;
+        background: #0d1117;
+        border-bottom: 1px solid #21262d;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 16px;
+        z-index: 998;
+        font-family: Inter, sans-serif;
+    }
+
+    /* Main content shifts down past topbar */
+    .main-content {
+        margin-left: 0;
+        padding-top: 56px;
+    }
+
+    /* Page padding tightens */
+    .page-wrap {
+        padding: 20px 14px;
+    }
+    .page-wrap-home {
+        padding: 24px 14px;
+    }
+
+    /* Hero text */
+    .hero-title {
+        font-size: 28px !important;
+    }
+    .hero-desc {
+        font-size: 14px !important;
+    }
+    .hero-section {
+        padding: 40px 0 32px !important;
+    }
+
+    /* Badge wrapping */
+    .badge-group span {
+        margin-bottom: 6px !important;
+    }
 }

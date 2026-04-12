@@ -303,4 +303,4 @@ def layout() -> html.Div:
 
         dcc.Store(id="signals-store", data=df.to_dict("records") if not df.empty else []),
 
-    ], style={"padding": "32px 36px", "minHeight": "100vh", "background": "#0d1117"})
+    ], className="page-wrap")
