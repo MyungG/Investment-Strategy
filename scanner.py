@@ -4,7 +4,6 @@ import pandas as pd
 from datetime import datetime
 from data_fetcher import get_stock_list, get_ohlcv
 from strategy import analyze_stock
-from chart import plot_stock
 
 sys.stdout.reconfigure(encoding="utf-8")
 
@@ -69,11 +68,6 @@ def run_scan():
     df_result.to_csv(filename, index=False, encoding="utf-8-sig")
     print(f"\nSaved: {filename}")
 
-    # 차트 자동 표시
-    print(f"\nShowing charts for {len(results)} signal stocks...")
-    for r in results:
-        print(f"  -> {r['name']} ({r['ticker']})  [{r['pattern']}]")
-        plot_stock(r["ticker"], r["name"], days=120)
 
 
 if __name__ == "__main__":
