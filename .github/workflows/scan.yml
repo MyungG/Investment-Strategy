@@ -39,16 +39,7 @@ jobs:
           KIS_APP_KEY: ${{ secrets.KIS_APP_KEY }}
           KIS_APP_SECRET: ${{ secrets.KIS_APP_SECRET }}
           KIS_IS_REAL: "true"
-        run: |
-          python -c "
-import json, sys
-sys.stdout.reconfigure(encoding='utf-8')
-from kis_api import get_investor_realtime
-data = get_investor_realtime(top=20)
-with open('investor_cache.json', 'w', encoding='utf-8') as f:
-    json.dump(data, f, ensure_ascii=False, indent=2)
-print('investor_cache.json saved:', data.get('saved_at',''))
-"
+        run: python fetch_investor.py
 
       - name: Commit and push
         run: |
