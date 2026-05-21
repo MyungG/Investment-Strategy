@@ -1,0 +1,10 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,range1,range2,range3,contraction,vol_contraction,market,bottom1,bottom2,neckline,dist_from_neckline,pivot_price,distance,vol_dryup
+105560,KB금융,155800,154156,+1.1%,0.6x,7/7,VCP,24.0%,16.4%,9.6%,40% of initial,True,KOSPI,,,,,,,
+417310,코람코더원리츠,10240,9920,+3.2%,0.7x,7/7,VCP,17.0%,10.3%,6.1%,36% of initial,True,KOSPI,,,,,,,
+244920,에이플러스에셋,11930,11008,+8.4%,1.0x,7/7,Double Bottom,,,,,,KOSPI,10400.0,10030.0,11440.0,+4.3%,,,
+33637K,솔루스첨단소재1우,2130,2214,-3.8%,0.1x,6/7,Double Bottom,,,,,,KOSPI,1984.0,2060.0,2105.0,+1.2%,,,
+425040,티이엠씨,25950,15305,+69.6%,1.3x,7/7,Pivot Setup,,,,,,KOSDAQ,,,,,26350.0,-1.5%,0.8x avg
+230240,에치에프알,30250,30002,+0.8%,0.7x,7/7,Double Bottom,,,,,,KOSDAQ,26000.0,25200.0,30850.0,-1.9%,,,
+041910,폴라리스AI파마,7280,7239,+0.6%,0.2x,6/7,Double Bottom,,,,,,KOSDAQ,6780.0,6890.0,7160.0,+1.7%,,,
+263020,디케이앤디,3440,3346,+2.8%,0.2x,6/7,Double Bottom,,,,,,KOSDAQ,3080.0,3160.0,3300.0,+4.2%,,,
+043590,웰킵스하이텍,795,703,+13.1%,0.0x,6/7,Pivot Setup,,,,,,KOSDAQ,,,,,795.0,+0.0%,0.0x avg
