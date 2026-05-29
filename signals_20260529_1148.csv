@@ -1,0 +1,5 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,range1,range2,range3,contraction,vol_contraction,market,bottom1,bottom2,neckline,dist_from_neckline
+417310,코람코더원리츠,9790,9985,-2.0%,1.3x,6/7,VCP,16.8%,12.4%,8.1%,48% of initial,True,KOSPI,,,,
+089970,브이엠,58900,51760,+13.8%,1.2x,7/7,Double Bottom,,,,,,KOSDAQ,53400.0,52100.0,60000.0,-1.8%
+085910,네오티스,31600,24976,+26.5%,0.9x,7/7,Double Bottom,,,,,,KOSDAQ,25700.0,26000.0,32000.0,-1.2%
+412350,레이저쎌,8700,8574,+1.5%,0.3x,6/7,Double Bottom,,,,,,KOSDAQ,7670.0,7450.0,8610.0,+1.0%
