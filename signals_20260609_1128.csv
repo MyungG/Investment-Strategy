@@ -1,0 +1,4 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market
+017670,SK텔레콤,108100,96238,+12.3%,1.7x,7/7,Double Bottom,93200,96900,105800,+2.2%,KOSPI
+001800,오리온홀딩스,25300,24634,+2.7%,0.5x,7/7,Double Bottom,24000,23150,25850,-2.1%,KOSPI
+012205,계양전기우,10480,10371,+1.1%,0.2x,6/7,Double Bottom,7690,8000,10070,+4.1%,KOSPI
