@@ -1,0 +1,5 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market,box_high,box_range,breakout,pivot_dryup
+017670,SK텔레콤,103000,97648,+5.5%,0.8x,7/7,Double Bottom,93200.0,96900.0,105800.0,-2.6%,KOSPI,,,,
+012750,에스원,88700,80002,+10.9%,3.2x,6/7,Flat Base Breakout,,,,,KOSPI,76700.0,14.8%,+15.6%,False
+001800,오리온홀딩스,25900,24735,+4.7%,1.1x,7/7,Double Bottom,24000.0,23150.0,25850.0,+0.2%,KOSPI,,,,
+417310,코람코더원리츠,10210,10042,+1.7%,2.4x,6/7,Double Bottom,9500.0,9950.0,10480.0,-2.6%,KOSPI,,,,
