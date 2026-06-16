@@ -1,0 +1,8 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market
+000270,기아,170200,159944,+6.4%,0.7x,7/7,Double Bottom,149400,151400,169900,+0.2%,KOSPI
+078930,GS,79200,73824,+7.3%,1.1x,6/7,Double Bottom,71900,69900,77300,+2.5%,KOSPI
+241560,두산밥캣,69100,68722,+0.6%,1.0x,6/7,Double Bottom,64100,61100,68800,+0.4%,KOSPI
+138930,BNK금융지주,18470,17832,+3.6%,1.7x,6/7,Double Bottom,16700,16230,17670,+4.5%,KOSPI
+417310,코람코더원리츠,10160,10064,+0.9%,0.8x,6/7,Double Bottom,9950,9650,10240,-0.8%,KOSPI
+074600,원익QnC,40000,35572,+12.4%,0.8x,6/7,Double Bottom,29550,29850,39800,+0.5%,KOSDAQ
+252990,샘씨엔에스,14620,12620,+15.8%,0.8x,7/7,Double Bottom,11720,11380,14940,-2.1%,KOSDAQ
