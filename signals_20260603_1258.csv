@@ -1,5 +1,0 @@
-﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market,pivot_price,distance,vol_dryup
-005387,현대차2우B,282000,255750,+10.3%,1.1x,7/7,Double Bottom,245000.0,248000.0,286000.0,-1.4%,KOSPI,,,
-001800,오리온홀딩스,26300,24556,+7.1%,0.7x,7/7,Double Bottom,24000.0,23150.0,25850.0,+1.7%,KOSPI,,,
-012205,계양전기우,10000,9959,+0.4%,0.1x,6/7,Double Bottom,7690.0,8000.0,10070.0,-0.7%,KOSPI,,,
-096530,씨젠,31850,25864,+23.1%,1.1x,6/7,Pivot Setup,,,,,KOSDAQ,32500.0,-2.0%,0.8x avg

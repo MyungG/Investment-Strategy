@@ -1,7 +1,0 @@
-﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market,pivot_price,distance,vol_dryup
-003490,대한항공,27050,25796,+4.9%,0.7x,6/7,Double Bottom,24800.0,23800.0,27450.0,-1.5%,KOSPI,,,
-222800,심텍,134000,102320,+31.0%,0.7x,7/7,Double Bottom,98700.0,100000.0,132800.0,+0.9%,KOSDAQ,,,
-420770,기가비스,159200,116252,+36.9%,1.4x,7/7,Pivot Setup,,,,,KOSDAQ,158000.0,+0.8%,0.7x avg
-074600,원익QnC,39050,36228,+7.8%,1.1x,6/7,Double Bottom,29550.0,29850.0,39800.0,-1.9%,KOSDAQ,,,
-252990,샘씨엔에스,14600,13038,+12.0%,0.8x,7/7,Double Bottom,11720.0,11380.0,14940.0,-2.3%,KOSDAQ,,,
-383310,에코프로에이치엔,32350,30524,+6.0%,0.7x,6/7,Double Bottom,25700.0,26750.0,32300.0,+0.2%,KOSDAQ,,,

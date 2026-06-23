@@ -1,5 +1,0 @@
-﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market
-086790,하나금융지주,123500,121328,+1.8%,1.1x,6/7,Double Bottom,114200,112400,123600,-0.1%,KOSPI
-003490,대한항공,27950,25717,+8.7%,1.4x,7/7,Double Bottom,24800,23800,27450,+1.8%,KOSPI
-204320,HL만도,65300,57908,+12.8%,1.1x,7/7,Double Bottom,52600,50000,63400,+3.0%,KOSPI
-383310,에코프로에이치엔,33350,30474,+9.4%,1.5x,6/7,Double Bottom,25700,26750,32300,+3.3%,KOSDAQ

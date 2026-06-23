@@ -1,4 +1,0 @@
-﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market,pivot_price,distance,vol_dryup
-017670,SK텔레콤,105400,98228,+7.3%,0.5x,7/7,Double Bottom,93200.0,96900.0,105800.0,-0.4%,KOSPI,,,
-001450,현대해상,40700,32957,+23.5%,0.6x,7/7,Pivot Setup,,,,,KOSPI,40150.0,+1.4%,0.7x avg
-001800,오리온홀딩스,26700,24809,+7.6%,0.8x,7/7,Double Bottom,24000.0,23150.0,25850.0,+3.3%,KOSPI,,,

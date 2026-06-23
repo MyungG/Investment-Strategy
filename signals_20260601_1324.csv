@@ -1,5 +1,0 @@
-﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market,pivot_price,distance,vol_dryup
-005387,현대차2우B,295500,255520,+15.6%,1.8x,7/7,Double Bottom,245000.0,248000.0,286000.0,+3.3%,KOSPI,,,
-454910,두산로보틱스,138400,96512,+43.4%,1.5x,7/7,Pivot Setup,,,,,KOSPI,138800.0,-0.3%,0.7x avg
-085910,네오티스,31800,25219,+26.1%,1.8x,7/7,Double Bottom,25700.0,26000.0,32000.0,-0.6%,KOSDAQ,,,
-331920,셀레믹스,17890,14154,+26.4%,1.1x,6/7,Double Bottom,13000.0,13000.0,17880.0,+0.1%,KOSDAQ,,,
