@@ -1,0 +1,3 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market,pivot_price,distance,vol_dryup
+003490,대한항공,27350,25877,+5.7%,1.0x,7/7,Double Bottom,24800.0,23800.0,27450.0,-0.4%,KOSPI,,,
+026910,광진실업,4775,2903,+64.4%,0.6x,6/7,Pivot Setup,,,,,KOSDAQ,4850.0,-1.5%,0.8x avg
