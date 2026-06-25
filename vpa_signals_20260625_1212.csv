@@ -1,0 +1,51 @@
+﻿ticker,name,price,vol_ratio,vs_ma50,pattern,patterns,signal
+009150,삼성전기,1997000,0.6x,+50.0%,No Supply,No Supply,bullish
+034730,SK,858000,2.7x,+55.0%,Effort vs Result,Effort vs Result,bullish
+066570,LG전자,203000,0.3x,+1.2%,No Supply,No Supply + Testing,bullish
+000810,삼성화재,651000,0.6x,+15.4%,No Supply,No Supply,bullish
+011070,LG이노텍,953000,0.4x,+13.2%,No Supply,No Supply + Testing,bullish
+012510,더존비즈온,120000,1.6x,+0.2%,Stopping Volume,Stopping Volume,bullish
+462870,시프트업,32800,0.6x,+3.2%,No Supply,No Supply,bullish
+475150,SK이터닉스,49050,2.1x,+3.3%,Effort vs Result,Effort vs Result,bullish
+057050,현대홈쇼핑,87300,2.6x,+6.2%,Effort vs Result,Effort vs Result,bullish
+004710,한솔테크닉스,11240,0.5x,+4.1%,No Supply,No Supply,bullish
+462520,조선내화,15730,4.4x,+8.2%,Effort vs Result,Effort vs Result,bullish
+004080,신흥,13870,0.4x,+0.1%,Testing,Testing,bullish
+009190,대양금속,1910,0.4x,+12.4%,No Supply,No Supply + Testing,bullish
+058730,다스코,4105,7.3x,+27.7%,Effort vs Result,Effort vs Result,bullish
+001210,금호전기,650,12.5x,-11.2%,Effort vs Result,Effort vs Result,bullish
+240810,원익IPS,154700,0.6x,+20.1%,No Supply,No Supply,bullish
+347850,디앤디파마텍,85000,0.7x,+3.5%,No Supply,No Supply,bullish
+214450,파마리서치,322500,2.4x,+5.4%,Effort vs Result,Effort vs Result,bullish
+031980,피에스케이홀딩스,127200,0.4x,+4.2%,No Supply,No Supply,bullish
+007390,네이처셀,24550,0.4x,+1.4%,No Supply,No Supply,bullish
+090360,로보스타,88500,0.2x,+1.4%,No Supply,No Supply,bullish
+122640,예스티,35750,0.6x,+24.7%,No Supply,No Supply,bullish
+241770,메카로,43500,0.2x,+8.8%,No Supply,No Supply,bullish
+019010,베뉴지,5830,2.4x,+10.6%,Effort vs Result,Effort vs Result,bullish
+034810,해성산업,6350,6.6x,-9.7%,Effort vs Result,Effort vs Result,bullish
+068930,디지털대성,7150,1.5x,-10.7%,Stopping Volume,Stopping Volume,bullish
+013120,동원개발,2150,4.3x,-16.4%,Stopping Volume,Stopping Volume,bullish
+469610,이노테크,16960,3.0x,-16.9%,Effort vs Result,Effort vs Result,bullish
+105330,케이엔더블유,9080,4.4x,-4.1%,Effort vs Result,Effort vs Result,bullish
+023600,삼보판지,8560,2.0x,-8.4%,Stopping Volume,Stopping Volume,bullish
+001540,안국약품,9880,0.4x,+2.8%,No Supply,No Supply,bullish
+419050,삼기에너지솔루션즈,1887,14.1x,+17.3%,Effort vs Result,Effort vs Result,bullish
+063080,컴투스홀딩스,12870,3.0x,-20.5%,Effort vs Result,Effort vs Result,bullish
+290660,다이나믹솔루션,1950,2.9x,-4.4%,Effort vs Result,Effort vs Result,bullish
+065170,비엘팜텍,2740,5.0x,+28.5%,Effort vs Result,Effort vs Result,bullish
+137080,나래나노텍,5570,2.2x,+5.3%,Effort vs Result,Effort vs Result,bullish
+043200,파루,842,7.8x,-3.7%,Effort vs Result,Effort vs Result,bullish
+148930,에이치와이티씨,3000,1.6x,+1.3%,Stopping Volume,Stopping Volume,bullish
+058450,한주에이알티,4850,0.6x,+5.4%,No Supply,No Supply,bullish
+477380,미래에셋비전스팩4호,2060,0.0x,+0.0%,Testing,Testing,bullish
+469880,하나30호스팩,2105,0.5x,+0.7%,Testing,Testing,bullish
+012340,뉴인텍,1116,5.1x,-9.4%,Effort vs Result,Effort vs Result,bullish
+477760,DB금융스팩12호,2050,0.2x,+0.5%,No Supply,No Supply + Testing,bullish
+900100,파이온엑스,2115,1.5x,-51.6%,Stopping Volume,Stopping Volume,bullish
+368970,오에스피,2200,3.1x,-4.4%,Effort vs Result,Effort vs Result,bullish
+0041B0,교보18호스팩,2040,0.0x,+0.4%,No Supply,No Supply + Testing,bullish
+478110,이베스트스팩6호,2040,0.2x,+0.2%,Testing,Testing,bullish
+473950,에스케이증권제13호스팩,2040,0.1x,+0.2%,No Supply,No Supply,bullish
+487830,신한제15호스팩,2045,0.3x,+0.1%,Testing,Testing,bullish
+475250,하나33호스팩,2060,1.6x,-0.9%,Stopping Volume,Stopping Volume,bullish

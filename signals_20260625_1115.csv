@@ -1,0 +1,2 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,pivot_price,distance,vol_dryup,market
+448730,삼성FN리츠,5800,5713,+1.5%,0.4x,6/7,Pivot Setup,5800,+0.0%,0.4x avg,KOSPI
