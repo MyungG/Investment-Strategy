@@ -1,0 +1,2 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market
+003490,대한항공,28050,26047,+7.7%,0.9x,7/7,Double Bottom,24800,23800,27450,+2.2%,KOSPI
