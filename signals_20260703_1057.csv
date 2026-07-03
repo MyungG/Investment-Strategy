@@ -1,0 +1,6 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market
+086790,하나금융지주,125600,120724,+4.0%,1.1x,7/7,Double Bottom,114200,112400,123600,+1.6%,KOSPI
+180640,한진칼,134000,116320,+15.2%,0.9x,6/7,Double Bottom,104700,109600,128100,+4.6%,KOSPI
+417310,코람코더원리츠,10050,10075,-0.2%,0.3x,6/7,Double Bottom,9650,9790,10220,-1.7%,KOSPI
+096530,씨젠,29350,28238,+3.9%,1.0x,6/7,Double Bottom,27350,26950,29500,-0.5%,KOSDAQ
+045100,한양이엔지,34800,31936,+9.0%,1.5x,6/7,Double Bottom,29050,27800,34050,+2.2%,KOSDAQ
