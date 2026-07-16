@@ -1,0 +1,8 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market,pivot_price,distance,vol_dryup
+055550,신한지주,107900,99530,+8.4%,1.0x,7/7,Double Bottom,92600.0,91600.0,107500.0,+0.4%,KOSPI,,,
+086790,하나금융지주,136800,121644,+12.5%,1.2x,7/7,Double Bottom,112400.0,109700.0,132000.0,+3.6%,KOSPI,,,
+161390,한국타이어앤테크놀로지,73600,66090,+11.4%,1.0x,6/7,Double Bottom,59100.0,59900.0,73500.0,+0.1%,KOSPI,,,
+139130,iM금융지주,18410,17775,+3.6%,1.0x,6/7,Double Bottom,16600.0,15830.0,18320.0,+0.5%,KOSPI,,,
+003690,코리안리,13660,13241,+3.2%,0.4x,6/7,Double Bottom,12760.0,12410.0,14000.0,-2.4%,KOSPI,,,
+121440,골프존홀딩스,6670,5175,+28.9%,0.3x,6/7,Pivot Setup,,,,,KOSDAQ,6710.0,-0.6%,0.5x avg
+053060,세동,1444,1383,+4.4%,0.4x,6/7,Double Bottom,1262.0,1265.0,1407.0,+2.6%,KOSDAQ,,,
