@@ -1,0 +1,7 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market,pivot_price,distance,vol_dryup
+105560,KB금융,174000,161590,+7.7%,0.6x,7/7,Double Bottom,151500.0,149300.0,172000.0,+1.2%,KOSPI,,,
+055550,신한지주,104700,99736,+5.0%,0.7x,7/7,Double Bottom,92600.0,91600.0,107500.0,-2.6%,KOSPI,,,
+086790,하나금융지주,132600,121878,+8.8%,1.0x,7/7,Double Bottom,112400.0,109700.0,132000.0,+0.5%,KOSPI,,,
+139130,iM금융지주,18140,17731,+2.3%,0.4x,6/7,Double Bottom,16600.0,15830.0,18320.0,-1.0%,KOSPI,,,
+121440,골프존홀딩스,6660,5242,+27.0%,0.9x,6/7,Pivot Setup,,,,,KOSDAQ,6710.0,-0.7%,0.7x avg
+053060,세동,1411,1384,+1.9%,0.4x,6/7,Double Bottom,1262.0,1265.0,1407.0,+0.3%,KOSDAQ,,,
