@@ -1,0 +1,4 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market,pivot_price,distance,vol_dryup
+005830,DB손해보험,159000,149786,+6.2%,1.0x,6/7,Double Bottom,136200.0,131500.0,153400.0,+3.7%,KOSPI,,,
+003690,코리안리,13600,13477,+0.9%,1.5x,7/7,Double Bottom,12760.0,12410.0,14000.0,-2.9%,KOSPI,,,
+121440,골프존홀딩스,6660,5423,+22.8%,0.5x,6/7,Pivot Setup,,,,,KOSDAQ,6710.0,-0.7%,0.4x avg
