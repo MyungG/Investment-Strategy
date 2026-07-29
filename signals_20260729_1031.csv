@@ -1,0 +1,3 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market,pivot_price,distance,vol_dryup
+082640,동양생명,8100,7603,+6.5%,1.7x,6/7,Double Bottom,7160.0,7030.0,8140.0,-0.5%,KOSPI,,,
+121440,골프존홀딩스,6680,5460,+22.3%,2.4x,6/7,Pivot Setup,,,,,KOSDAQ,6710.0,-0.4%,0.6x avg
