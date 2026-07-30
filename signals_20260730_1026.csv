@@ -1,0 +1,4 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market,box_high,box_range,breakout,pivot_dryup
+105560,KB금융,167400,163540,+2.4%,1.0x,7/7,Double Bottom,151500.0,149300.0,172000.0,-2.7%,KOSPI,,,,
+002210,동성제약,1800,989,+81.9%,infx,7/7,Flat Base Breakout,,,,,KOSPI,0.0,nan%,+inf%,False
+057540,옴니시스템,865,808,+7.0%,0.8x,6/7,Double Bottom,804.0,802.0,872.0,-0.8%,KOSDAQ,,,,
