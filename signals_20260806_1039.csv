@@ -1,0 +1,9 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,box_high,box_range,breakout,pivot_dryup,market,pivot_price,distance,vol_dryup,bottom1,bottom2,neckline,dist_from_neckline
+003690,코리안리,14630,13430,+8.9%,2.0x,7/7,Flat Base Breakout,14400.0,10.9%,+1.6%,True,KOSPI,,,,,,,
+417310,코람코더원리츠,10840,10145,+6.8%,0.8x,7/7,Pivot Setup,,,,,KOSPI,10900.0,-0.6%,0.8x avg,,,,
+096530,씨젠,28700,28410,+1.0%,1.0x,6/7,Double Bottom,,,,,KOSDAQ,,,,27350.0,26950.0,29500.0,-2.7%
+127120,제이에스링크,40100,35296,+13.6%,2.9x,6/7,Double Bottom,,,,,KOSDAQ,,,,30900.0,32200.0,40250.0,-0.4%
+439090,마녀공장,17950,15095,+18.9%,1.9x,6/7,Pivot Setup,,,,,KOSDAQ,18000.0,-0.3%,0.7x avg,,,,
+121440,골프존홀딩스,6590,5694,+15.7%,0.4x,6/7,Pivot Setup,,,,,KOSDAQ,6710.0,-1.8%,0.6x avg,,,,
+071200,인피니트헬스케어,9790,7667,+27.7%,1.0x,7/7,Pivot Setup,,,,,KOSDAQ,9740.0,+0.5%,0.7x avg,,,,
+035610,솔본,4930,3923,+25.6%,0.4x,6/7,Pivot Setup,,,,,KOSDAQ,4950.0,-0.4%,0.7x avg,,,,
