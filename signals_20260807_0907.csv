@@ -1,0 +1,6 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,pivot_price,distance,vol_dryup,market,bottom1,bottom2,neckline,dist_from_neckline
+316140,우리금융지주,34800,30995,+12.3%,1.0x,6/7,Pivot Setup,34300.0,+1.5%,0.8x avg,KOSPI,,,,
+271560,오리온,137600,132346,+4.0%,0.7x,6/7,Double Bottom,,,,KOSPI,124800.0,127000.0,140300.0,-1.9%
+175330,JB금융지주,28850,26117,+10.5%,0.7x,6/7,Pivot Setup,29000.0,-0.5%,0.6x avg,KOSPI,,,,
+013700,까뮤이앤씨,1580,1288,+22.6%,1.3x,6/7,Pivot Setup,1579.0,+0.1%,0.5x avg,KOSPI,,,,
+121440,골프존홀딩스,6580,5733,+14.8%,0.3x,6/7,Pivot Setup,6710.0,-1.9%,0.5x avg,KOSDAQ,,,,
