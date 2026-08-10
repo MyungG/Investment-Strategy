@@ -1,0 +1,5 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market,pivot_price,distance,vol_dryup
+271560,오리온,137500,132412,+3.8%,0.8x,6/7,Double Bottom,124800.0,127000.0,140300.0,-2.0%,KOSPI,,,
+013700,까뮤이앤씨,1592,1294,+22.9%,0.4x,6/7,Pivot Setup,,,,,KOSPI,1601.0,-0.6%,0.6x avg
+121440,골프존홀딩스,6760,5776,+17.0%,0.8x,6/7,Pivot Setup,,,,,KOSDAQ,6690.0,+1.0%,0.5x avg
+035610,솔본,4860,3978,+22.2%,0.9x,6/7,Pivot Setup,,,,,KOSDAQ,4950.0,-1.8%,0.6x avg
