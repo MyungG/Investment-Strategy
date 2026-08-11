@@ -1,0 +1,3 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,pivot_price,distance,vol_dryup,market
+121440,골프존홀딩스,6710,5820,+15.3%,0.1x,6/7,Pivot Setup,6790,-1.2%,0.5x avg,KOSDAQ
+457600,벡트,3935,2566,+53.3%,0.9x,6/7,Pivot Setup,3965,-0.8%,0.7x avg,KOSDAQ
