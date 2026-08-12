@@ -1,0 +1,4 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,pivot_price,distance,vol_dryup,market
+417310,코람코더원리츠,10900,10228,+6.6%,0.4x,7/7,Pivot Setup,11000,-0.9%,0.6x avg,KOSPI
+013700,까뮤이앤씨,1695,1312,+29.1%,1.2x,7/7,Pivot Setup,1678,+1.0%,0.8x avg,KOSPI
+121440,골프존홀딩스,6900,5870,+17.5%,0.3x,6/7,Pivot Setup,6790,+1.6%,0.4x avg,KOSDAQ
