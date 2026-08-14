@@ -1,0 +1,5 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,box_high,box_range,breakout,pivot_dryup,market,pivot_price,distance,vol_dryup,bottom1,bottom2,neckline,dist_from_neckline
+003690,코리안리,15290,13602,+12.4%,1.6x,7/7,Flat Base Breakout,14870.0,14.5%,+2.8%,True,KOSPI,,,,,,,
+417310,코람코더원리츠,10930,10274,+6.4%,0.3x,7/7,Pivot Setup,,,,,KOSPI,11000.0,-0.6%,0.4x avg,,,,
+252990,샘씨엔에스,15950,13254,+20.3%,0.5x,7/7,Pivot Setup,,,,,KOSDAQ,16150.0,-1.2%,0.8x avg,,,,
+041830,인바디,64400,52548,+22.6%,0.8x,7/7,Double Bottom,,,,,KOSDAQ,,,,44450.0,46200.0,62000.0,+3.9%
