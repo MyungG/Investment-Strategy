@@ -1,0 +1,4 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,pivot_price,distance,vol_dryup,market,bottom1,bottom2,neckline,dist_from_neckline
+417310,코람코더원리츠,10890,10297,+5.8%,0.5x,7/7,Pivot Setup,11000.0,-1.0%,0.4x avg,KOSPI,,,,
+194370,제이에스코퍼레이션,12800,12037,+6.3%,0.5x,6/7,Double Bottom,,,,KOSPI,11120.0,11250.0,12310.0,+4.0%
+041830,인바디,61100,52974,+15.3%,0.9x,7/7,Double Bottom,,,,KOSDAQ,44450.0,46200.0,62000.0,-1.5%
