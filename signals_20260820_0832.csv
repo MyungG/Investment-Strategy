@@ -1,0 +1,4 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,pivot_price,distance,vol_dryup,market,bottom1,bottom2,neckline,dist_from_neckline
+010060,OCI홀딩스,290000,232106,+24.9%,0.8x,6/7,Pivot Setup,293500.0,-1.2%,0.7x avg,KOSPI,,,,
+194370,제이에스코퍼레이션,12450,12127,+2.7%,0.6x,6/7,Double Bottom,,,,KOSPI,11120.0,11250.0,12310.0,+1.1%
+041830,인바디,62000,53882,+15.1%,0.3x,7/7,Double Bottom,,,,KOSDAQ,44450.0,46200.0,62000.0,+0.0%
