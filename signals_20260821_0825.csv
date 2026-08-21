@@ -1,0 +1,4 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market,pivot_price,distance,vol_dryup
+194370,제이에스코퍼레이션,12720,12150,+4.7%,0.4x,6/7,Double Bottom,11120.0,11250.0,12310.0,+3.3%,KOSPI,,,
+340570,티앤엘,29700,28718,+3.4%,0.5x,7/7,Double Bottom,25810.0,25456.0,28290.0,+5.0%,KOSDAQ,,,
+465320,교보15호스팩,2130,2105,+1.2%,0.0x,6/7,Pivot Setup,,,,,KOSDAQ,2135.0,-0.2%,0.7x avg
