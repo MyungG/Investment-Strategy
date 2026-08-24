@@ -1,0 +1,4 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,pivot_price,distance,vol_dryup,market,bottom1,bottom2,neckline,dist_from_neckline
+090430,아모레퍼시픽,139900,121312,+15.3%,0.7x,6/7,Pivot Setup,142000.0,-1.5%,0.6x avg,KOSPI,,,,
+041830,인바디,62900,54499,+15.4%,0.7x,7/7,Double Bottom,,,,KOSDAQ,44450.0,46200.0,62000.0,+1.5%
+465320,교보15호스팩,2130,2105,+1.1%,0.1x,6/7,Pivot Setup,2135.0,-0.2%,0.6x avg,KOSDAQ,,,,
