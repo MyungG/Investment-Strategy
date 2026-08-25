@@ -1,0 +1,5 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market,pivot_price,distance,vol_dryup
+000810,삼성화재,648000,640880,+1.1%,0.3x,6/7,Double Bottom,587000.0,611000.0,648000.0,+0.0%,KOSPI,,,
+090430,아모레퍼시픽,143300,121938,+17.5%,1.1x,6/7,Pivot Setup,,,,,KOSPI,142000.0,+0.9%,0.6x avg
+041830,인바디,60900,54830,+11.1%,0.7x,7/7,Double Bottom,44450.0,46200.0,62000.0,-1.8%,KOSDAQ,,,
+465320,교보15호스팩,2130,2106,+1.1%,0.2x,6/7,Pivot Setup,,,,,KOSDAQ,2135.0,-0.2%,0.3x avg
