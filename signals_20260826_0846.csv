@@ -1,0 +1,10 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,pivot_price,distance,vol_dryup,market,box_high,box_range,breakout,pivot_dryup
+000810,삼성화재,680000,640960,+6.1%,0.7x,6/7,Double Bottom + Pivot Setup,587000.0,611000.0,648000.0,+4.9%,666000.0,+2.1%,0.8x avg,KOSPI,,,,
+090430,아모레퍼시픽,143500,122558,+17.1%,0.8x,6/7,Pivot Setup,,,,,145300.0,-1.2%,0.7x avg,KOSPI,,,,
+021240,코웨이,100000,92888,+7.7%,0.7x,6/7,Pivot Setup,,,,,101700.0,-1.7%,0.8x avg,KOSPI,,,,
+001450,현대해상,51500,39782,+29.5%,0.6x,7/7,Pivot Setup,,,,,51000.0,+1.0%,0.6x avg,KOSPI,,,,
+161890,한국콜마,148800,108076,+37.7%,0.5x,7/7,Pivot Setup,,,,,150900.0,-1.4%,0.8x avg,KOSPI,,,,
+294870,IPARK현대산업개발,23000,20062,+14.6%,0.9x,6/7,Pivot Setup,,,,,23000.0,+0.0%,0.6x avg,KOSPI,,,,
+417310,코람코더원리츠,11030,10400,+6.1%,2.1x,7/7,Flat Base Breakout,,,,,,,,KOSPI,11000.0,3.8%,+0.3%,False
+041830,인바디,60300,55125,+9.4%,0.3x,7/7,Double Bottom,44450.0,46200.0,62000.0,-2.7%,,,,KOSDAQ,,,,
+465320,교보15호스팩,2130,2107,+1.1%,0.3x,6/7,Pivot Setup,,,,,2135.0,-0.2%,0.3x avg,KOSDAQ,,,,
