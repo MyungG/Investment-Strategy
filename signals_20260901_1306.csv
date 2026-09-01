@@ -1,0 +1,10 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market,pivot_price,distance,vol_dryup,box_high,box_range,breakout,pivot_dryup
+105560,KB금융,171200,168120,+1.8%,1.3x,6/7,Double Bottom,160100.0,160000.0,175800.0,-2.6%,KOSPI,,,,,,,
+055550,신한지주,111100,103904,+6.9%,1.1x,7/7,Double Bottom,98300.0,101100.0,110000.0,+1.0%,KOSPI,,,,,,,
+086790,하나금융지주,137400,127252,+8.0%,1.2x,7/7,Double Bottom,120400.0,123400.0,134700.0,+2.0%,KOSPI,,,,,,,
+000810,삼성화재,677000,640180,+5.8%,0.6x,7/7,Double Bottom,587000.0,611000.0,648000.0,+4.5%,KOSPI,,,,,,,
+021240,코웨이,97800,93528,+4.6%,0.5x,7/7,Double Bottom,90600.0,93400.0,98200.0,-0.4%,KOSPI,,,,,,,
+175330,JB금융지주,29250,26833,+9.0%,1.0x,6/7,Double Bottom,25550.0,26400.0,29350.0,-0.3%,KOSPI,,,,,,,
+294870,IPARK현대산업개발,23050,20278,+13.7%,0.5x,6/7,Pivot Setup,,,,,KOSPI,23400.0,-1.5%,0.7x avg,,,,
+000400,롯데손해보험,2155,2063,+4.4%,1.7x,6/7,Double Bottom + Flat Base Breakout,1884.0,1963.0,2075.0,+3.9%,KOSPI,,,,2145.0,14.5%,+0.5%,True
+377450,리파인,16710,12191,+37.1%,0.9x,6/7,Pivot Setup,,,,,KOSDAQ,17000.0,-1.7%,0.8x avg,,,,
