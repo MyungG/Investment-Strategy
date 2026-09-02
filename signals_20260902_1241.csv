@@ -1,0 +1,10 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market,box_high,box_range,breakout,pivot_dryup,pivot_price,distance,vol_dryup
+055550,신한지주,110500,104164,+6.1%,1.4x,7/7,Double Bottom,98300.0,101100.0,110000.0,+0.5%,KOSPI,,,,,,,
+086790,하나금융지주,134900,127556,+5.8%,1.3x,7/7,Double Bottom,120400.0,123400.0,134700.0,+0.1%,KOSPI,,,,,,,
+000810,삼성화재,657000,639620,+2.7%,0.7x,7/7,Double Bottom,587000.0,611000.0,648000.0,+1.4%,KOSPI,,,,,,,
+138040,메리츠금융지주,129800,116420,+11.5%,2.4x,6/7,Flat Base Breakout,,,,,KOSPI,126800.0,12.0%,+2.4%,False,,,
+021240,코웨이,98700,93782,+5.2%,1.0x,7/7,Double Bottom,90600.0,93400.0,98200.0,+0.5%,KOSPI,,,,,,,
+175330,JB금융지주,30550,26940,+13.4%,2.3x,6/7,Double Bottom + Flat Base Breakout,25550.0,26400.0,29350.0,+4.1%,KOSPI,29600.0,13.2%,+3.2%,False,,,
+000400,롯데손해보험,2090,2069,+1.0%,1.3x,6/7,Double Bottom,1884.0,1963.0,2075.0,+0.7%,KOSPI,,,,,,,
+058730,다스코,3940,3746,+5.2%,4.2x,6/7,Double Bottom,2975.0,3080.0,3790.0,+4.0%,KOSPI,,,,,,,
+417840,저스템,15030,11867,+26.7%,1.4x,7/7,Pivot Setup,,,,,KOSDAQ,,,,,15200.0,-1.1%,0.7x avg
