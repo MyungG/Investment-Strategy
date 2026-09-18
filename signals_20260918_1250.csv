@@ -1,0 +1,6 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market,pivot_price,distance,vol_dryup
+105560,KB금융,175700,172056,+2.1%,1.0x,7/7,Double Bottom,160100.0,160000.0,175800.0,-0.1%,KOSPI,,,
+021240,코웨이,101500,95898,+5.8%,2.3x,7/7,Double Bottom,90600.0,93400.0,98200.0,+3.4%,KOSPI,,,
+007340,DN오토모티브,49600,44450,+11.6%,1.2x,7/7,Double Bottom + Pivot Setup,44200.0,43500.0,48550.0,+2.2%,KOSPI,49500.0,+0.2%,0.6x avg
+417310,코람코더원리츠,2385,2270,+5.0%,0.5x,7/7,Pivot Setup,,,,,KOSPI,2395.0,-0.4%,0.2x avg
+217190,제너셈,7580,5764,+31.5%,1.0x,6/7,Pivot Setup,,,,,KOSDAQ,7460.0,+1.6%,0.7x avg
