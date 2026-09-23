@@ -1,0 +1,9 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market,range1,range2,range3,contraction,vol_contraction
+009150,삼성전기,1501000,1338180,+12.2%,0.8x,6/7,Double Bottom,1316000.0,1322000.0,1458000.0,+2.9%,KOSPI,,,,,
+105560,KB금융,174100,171780,+1.4%,0.6x,7/7,VCP + Double Bottom,160100.0,160000.0,175800.0,-1.0%,KOSPI,23.1%,12.5%,9.8%,42% of initial,True
+055550,신한지주,110100,107414,+2.5%,0.8x,7/7,VCP,,,,,KOSPI,18.4%,14.0%,8.2%,45% of initial,True
+086790,하나금융지주,133700,132472,+0.9%,0.8x,7/7,VCP,,,,,KOSPI,22.6%,13.4%,7.7%,34% of initial,True
+066570,LG전자,210500,191504,+9.9%,0.8x,6/7,Double Bottom,194500.0,194900.0,216500.0,-2.8%,KOSPI,,,,,
+175330,JB금융지주,30250,28793,+5.1%,0.6x,7/7,Double Bottom,25550.0,26400.0,29350.0,+3.1%,KOSPI,,,,,
+007340,DN오토모티브,47700,45217,+5.5%,1.1x,6/7,Double Bottom,44200.0,43500.0,48550.0,-1.8%,KOSPI,,,,,
+094860,네오리진,1398,1371,+1.9%,1.0x,6/7,Double Bottom,1200.0,1226.0,1352.0,+3.4%,KOSDAQ,,,,,
