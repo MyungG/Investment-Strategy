@@ -1,0 +1,411 @@
+﻿ticker,name,price,vol_ratio,vs_ma50,pattern,patterns,signal
+000810,삼성화재,648000,0.6x,+0.4%,No Supply,No Supply,bullish
+042700,한미반도체,243000,0.6x,+10.7%,No Supply,No Supply,bullish
+138040,메리츠금융지주,125500,0.6x,+2.4%,No Supply,No Supply,bullish
+005830,DB손해보험,184000,0.7x,+4.7%,No Supply,No Supply,bullish
+000500,가온전선,318000,0.4x,+59.7%,No Supply,No Supply + Testing,bullish
+021240,코웨이,99700,0.7x,+3.2%,No Supply,No Supply,bullish
+000880,한화,130100,0.4x,+11.3%,No Supply,No Supply + Testing,bullish
+009830,한화솔루션,29400,2.1x,-2.7%,Effort vs Result,Effort vs Result,bullish
+062040,산일전기,205000,0.4x,+14.3%,No Supply,No Supply,bullish
+175330,JB금융지주,30250,0.6x,+5.1%,No Supply,No Supply,bullish
+052690,한전기술,131000,0.6x,+19.9%,No Supply,No Supply,bullish
+051900,LG생활건강,293500,0.5x,+1.1%,No Supply,No Supply + Testing,bullish
+001450,현대해상,47350,0.7x,+5.0%,No Supply,No Supply,bullish
+103590,일진전기,81800,2.9x,+23.8%,Effort vs Result,Effort vs Result,bullish
+012750,에스원,82400,0.5x,+6.2%,No Supply,No Supply + Testing,bullish
+336260,두산퓨얼셀,47300,0.4x,+17.1%,No Supply,No Supply + Testing,bullish
+085620,미래에셋생명,19470,0.3x,+0.3%,No Supply,No Supply,bullish
+004990,롯데지주,24400,0.6x,+3.1%,No Supply,No Supply,bullish
+018670,SK가스,239000,0.6x,+2.4%,No Supply,No Supply,bullish
+112610,씨에스윈드,50100,0.6x,+10.3%,No Supply,No Supply,bullish
+020150,롯데에너지머티리얼즈,40100,0.3x,+17.9%,No Supply,No Supply + Testing,bullish
+457190,이수스페셜티케미컬,64200,0.6x,+3.6%,No Supply,No Supply,bullish
+089860,롯데렌탈,49600,0.3x,+11.9%,No Supply,No Supply + Testing,bullish
+001820,삼화콘덴서,146900,0.6x,+44.4%,No Supply,No Supply,bullish
+012630,HDC,25500,0.5x,+12.2%,No Supply,No Supply + Testing,bullish
+097230,HJ중공업,14890,1.8x,-7.6%,Stopping Volume,Stopping Volume,bullish
+000815,삼성화재우,409000,0.5x,+0.5%,No Supply,No Supply,bullish
+300720,한일시멘트,16070,0.5x,+4.9%,No Supply,No Supply,bullish
+280360,롯데웰푸드,125000,0.4x,+1.6%,Testing,Testing,bullish
+030610,교보증권,10000,0.5x,+0.6%,No Supply,No Supply,bullish
+006340,대원전선,13530,0.6x,+0.9%,No Supply,No Supply,bullish
+006120,SK디스커버리,60700,2.0x,+13.7%,Effort vs Result,Effort vs Result,bullish
+003240,태광산업,910000,0.6x,+1.5%,No Supply,No Supply,bullish
+003530,한화투자증권,4615,0.4x,+0.8%,No Supply,No Supply + Testing,bullish
+009240,한샘,39650,0.5x,+2.8%,No Supply,No Supply,bullish
+285130,SK케미칼,49800,0.4x,+5.9%,No Supply,No Supply + Testing,bullish
+004490,세방전지,59200,0.4x,+2.9%,No Supply,No Supply + Testing,bullish
+006110,삼아알미늄,54100,0.6x,+6.3%,No Supply,No Supply,bullish
+000670,영풍,43200,0.6x,+11.0%,No Supply,No Supply,bullish
+100840,SNT에너지,37000,0.6x,+22.5%,No Supply,No Supply,bullish
+005690,파미셀,12520,0.6x,+13.0%,No Supply,No Supply,bullish
+005180,빙그레,83800,0.4x,+6.9%,No Supply,No Supply + Testing,bullish
+094800,맵스리얼티,7700,0.5x,+12.5%,No Supply,No Supply,bullish
+005880,대한해운,1987,0.7x,+0.0%,No Supply,No Supply,bullish
+001060,JW중외제약,26450,0.4x,+1.5%,No Supply,No Supply,bullish
+079900,전진건설로봇,42350,0.4x,+18.0%,No Supply,No Supply + Testing,bullish
+002840,미원상사,136500,0.6x,+6.2%,No Supply,No Supply,bullish
+00088K,한화3우B,40500,0.4x,+16.5%,Testing,Testing,bullish
+017900,광전자,9880,0.4x,+30.6%,No Supply,No Supply,bullish
+336370,솔루스첨단소재,7620,0.6x,+3.0%,No Supply,No Supply,bullish
+019170,신풍제약,9270,0.2x,+4.7%,No Supply,No Supply + Testing,bullish
+002990,금호건설,13040,0.1x,+0.7%,No Supply,No Supply + Testing,bullish
+161000,애경케미칼,9910,0.4x,+4.1%,No Supply,No Supply + Testing,bullish
+004700,조광피혁,65200,0.4x,+1.0%,No Supply,No Supply,bullish
+009900,명신산업,8160,0.4x,+7.9%,No Supply,No Supply,bullish
+003280,흥아해운,1785,0.2x,+1.6%,No Supply,No Supply + Testing,bullish
+092230,KPX홀딩스,95300,0.6x,+3.1%,No Supply,No Supply,bullish
+317400,자이에스앤디,9870,0.7x,+10.3%,No Supply,No Supply,bullish
+183190,아세아시멘트,10490,0.3x,+6.0%,No Supply,No Supply + Testing,bullish
+217590,티엠씨,14310,0.4x,+16.8%,No Supply,No Supply,bullish
+010955,S-Oil우,83600,2.7x,+21.7%,Effort vs Result,Effort vs Result,bullish
+001230,동국홀딩스,2115,0.3x,+10.7%,No Supply,No Supply + Testing,bullish
+123890,한국자산신탁,2425,0.4x,+0.7%,No Supply,No Supply,bullish
+002710,TCC스틸,11300,0.4x,+10.2%,No Supply,No Supply,bullish
+004310,현대약품,8850,0.1x,+23.3%,No Supply,No Supply + Testing,bullish
+298690,에어부산,1527,0.7x,+1.2%,No Supply,No Supply,bullish
+053690,한미글로벌,21500,0.3x,+11.1%,No Supply,No Supply,bullish
+035510,신세계 I&C,15670,0.5x,+15.1%,No Supply,No Supply,bullish
+013580,계룡건설,22400,0.5x,+6.8%,No Supply,No Supply,bullish
+077500,유니퀘스트,9150,3.3x,+39.1%,Effort vs Result,Effort vs Result,bullish
+377190,디앤디플랫폼리츠,2240,0.6x,+4.7%,No Supply,No Supply,bullish
+095570,AJ네트웍스,4280,2.4x,-0.3%,Effort vs Result,Effort vs Result,bullish
+117580,대성에너지,7040,0.2x,+1.3%,No Supply,No Supply + Testing,bullish
+487570,HS효성,49400,4.7x,+7.0%,Effort vs Result,Effort vs Result,bullish
+003610,방림,5700,0.4x,+4.1%,No Supply,No Supply,bullish
+003220,대원제약,7840,0.3x,+0.0%,Testing,Testing,bullish
+460850,동국씨엠,5300,0.6x,+2.8%,No Supply,No Supply,bullish
+004150,한솔홀딩스,3450,0.5x,+4.6%,No Supply,No Supply,bullish
+008350,남선알미늄,1065,0.5x,+1.9%,No Supply,No Supply + Testing,bullish
+014280,금강공업,4405,0.4x,+4.1%,No Supply,No Supply + Testing,bullish
+001210,금호전기,9960,0.2x,+29.6%,No Supply,No Supply,bullish
+005800,신영와코루,13970,6.2x,+3.8%,Effort vs Result,Effort vs Result,bullish
+003010,혜인,9450,0.5x,+20.4%,No Supply,No Supply,bullish
+014530,극동유화,3275,0.1x,+1.3%,No Supply,No Supply + Testing,bullish
+017550,수산세보틱스,1830,0.6x,+3.3%,No Supply,No Supply,bullish
+015590,DKME,2110,0.5x,+22.5%,Testing,Testing,bullish
+008040,사조동아원,7640,0.3x,+3.9%,No Supply,No Supply,bullish
+123690,한국화장품,6320,0.2x,+0.1%,No Supply,No Supply + Testing,bullish
+417310,코람코더원리츠,2395,0.2x,+4.6%,Testing,Testing,bullish
+008700,아남전자,1253,0.5x,+3.4%,No Supply,No Supply,bullish
+002200,한국수출포장,2815,0.1x,+10.7%,Testing,Testing,bullish
+013700,까뮤이앤씨,1588,0.3x,+1.0%,No Supply,No Supply,bullish
+058850,KTcs,2190,9.4x,-0.7%,Effort vs Result,Effort vs Result,bullish
+109070,주성코퍼레이션,1550,0.0x,+2.6%,Testing,Testing,bullish
+007610,선도전기,4505,0.4x,+6.5%,No Supply,No Supply + Testing,bullish
+000590,CS홀딩스,68400,4.7x,+2.2%,Effort vs Result,Effort vs Result,bullish
+055490,테이팩스,14650,0.6x,+3.1%,No Supply,No Supply,bullish
+338100,NH프라임리츠,3815,1.7x,+0.2%,Stopping Volume,Stopping Volume,bullish
+071090,하이스틸,3400,0.5x,+11.1%,No Supply,No Supply,bullish
+014990,인디에프,4305,0.3x,+49.9%,Testing,Testing,bullish
+007815,코리아써우,18860,3.0x,+10.2%,Effort vs Result,Effort vs Result,bullish
+006980,우성,17420,0.1x,+6.6%,No Supply,No Supply + Testing,bullish
+28513K,SK케미칼우,25350,0.1x,+9.6%,No Supply,No Supply + Testing,bullish
+011390,부산산업,49700,0.5x,+9.2%,No Supply,No Supply + Testing,bullish
+000215,DL우,24800,0.4x,+6.6%,No Supply,No Supply + Testing,bullish
+017180,명문제약,1233,0.1x,+0.9%,No Supply,No Supply + Testing,bullish
+446070,유니드비티플러스,3845,0.5x,+6.7%,No Supply,No Supply + Testing,bullish
+049800,우진플라임,1832,0.5x,+1.5%,Testing,Testing,bullish
+024070,WISCOM,1994,0.4x,+3.1%,No Supply,No Supply,bullish
+002360,SH에너지화학,2610,9.7x,+47.0%,Effort vs Result,Effort vs Result,bullish
+007120,미래아이앤지,1023,1.8x,-10.7%,Stopping Volume,Stopping Volume,bullish
+019175,신풍제약우,13770,0.3x,+3.5%,No Supply,No Supply + Testing,bullish
+033250,체시스,4245,1.8x,+3.3%,Stopping Volume,Stopping Volume,bullish
+33637K,솔루스첨단소재1우,1500,0.1x,+0.1%,Testing,Testing,bullish
+45226K,한화갤러리아우,4560,0.5x,+10.3%,No Supply,No Supply,bullish
+004105,태양금속우,3880,3.9x,+25.9%,Effort vs Result,Effort vs Result,bullish
+084695,대상홀딩스우,13150,1.9x,+10.9%,Stopping Volume,Stopping Volume,bullish
+38380K,LX홀딩스1우,7440,0.2x,+0.5%,No Supply,No Supply,bullish
+001067,JW중외제약2우B,50200,0.0x,+9.2%,Testing,Testing,bullish
+33637L,솔루스첨단소재2우B,2265,2.0x,+2.5%,Stopping Volume,Stopping Volume,bullish
+000545,흥국화재우,5700,0.0x,+4.5%,No Supply,No Supply + Testing,bullish
+005965,동부건설우,17390,1.8x,+2.7%,Stopping Volume,Stopping Volume,bullish
+039030,이오테크닉스,479500,0.6x,+24.9%,No Supply,No Supply,bullish
+108490,로보티즈,301500,0.5x,+19.5%,No Supply,No Supply,bullish
+357780,솔브레인,368000,2.3x,+18.2%,Effort vs Result,Effort vs Result,bullish
+010170,대한광통신,17720,0.6x,+39.1%,No Supply,No Supply,bullish
+005290,동진쎄미켐,46850,3.6x,+12.7%,Effort vs Result,Effort vs Result,bullish
+032820,우리기술,12980,0.4x,+13.2%,No Supply,No Supply,bullish
+263750,펄어비스,33700,0.4x,+0.5%,No Supply,No Supply + Testing,bullish
+131970,두산테스나,94200,0.6x,+20.0%,No Supply,No Supply,bullish
+096530,씨젠,33850,0.5x,+11.2%,No Supply,No Supply,bullish
+007390,네이처셀,24700,0.5x,+3.0%,No Supply,No Supply + Testing,bullish
+218410,RFHIC,58800,0.5x,+20.8%,No Supply,No Supply,bullish
+078600,대주전자재료,86800,0.6x,+3.5%,No Supply,No Supply,bullish
+232140,와이씨,14270,0.6x,+33.2%,No Supply,No Supply,bullish
+160190,하이젠알앤엠,29450,0.5x,+53.7%,No Supply,No Supply,bullish
+115180,큐리언트,22500,0.2x,+5.0%,No Supply,No Supply,bullish
+327260,RF머트리얼즈,46700,0.6x,+37.5%,No Supply,No Supply,bullish
+032500,케이엠더블유,19540,0.5x,+23.5%,No Supply,No Supply,bullish
+388720,유일로보틱스,69100,0.4x,+3.6%,No Supply,No Supply,bullish
+425420,티에프이,64800,0.5x,+51.7%,Testing,Testing,bullish
+295310,에이치브이엠,64100,2.2x,+36.4%,Effort vs Result,Effort vs Result,bullish
+161580,필옵틱스,32550,0.5x,+15.5%,No Supply,No Supply,bullish
+033100,제룡전기,47900,0.6x,+4.7%,No Supply,No Supply,bullish
+044490,태웅,38250,0.5x,+21.5%,No Supply,No Supply,bullish
+064290,인텍플러스,55000,0.7x,+50.3%,No Supply,No Supply,bullish
+476060,온코닉테라퓨틱스,15120,0.5x,+7.6%,No Supply,No Supply,bullish
+023160,태광,26600,0.5x,+10.6%,No Supply,No Supply,bullish
+468530,프로티나,46900,4.1x,+60.2%,Effort vs Result,Effort vs Result,bullish
+101160,월덱스,30900,0.6x,+5.1%,No Supply,No Supply,bullish
+365340,성일하이텍,34450,0.5x,+2.1%,No Supply,No Supply,bullish
+042000,카페24,17800,10.2x,+7.2%,Effort vs Result,Effort vs Result,bullish
+187660,페니트리움바이오,6630,0.2x,+33.4%,Testing,Testing,bullish
+078340,컴투스,34850,0.3x,+11.5%,Testing,Testing,bullish
+114810,한솔아이원스,14630,2.4x,+23.5%,Effort vs Result,Effort vs Result,bullish
+204620,글로벌텍스프리,5840,0.4x,+12.9%,No Supply,No Supply + Testing,bullish
+332570,PS일렉트로닉스,8820,0.5x,+10.7%,No Supply,No Supply + Testing,bullish
+079370,제우스,12870,7.7x,+32.6%,Effort vs Result,Effort vs Result,bullish
+159010,아스플로,29400,4.8x,+48.5%,Effort vs Result,Effort vs Result,bullish
+101730,위메이드맥스,4615,0.3x,+11.8%,No Supply,No Supply + Testing,bullish
+006910,보성파워텍,7450,0.5x,+7.9%,No Supply,No Supply,bullish
+025900,동화기업,6750,0.3x,+0.1%,Testing,Testing,bullish
+121440,골프존홀딩스,7660,0.3x,+5.4%,No Supply,No Supply + Testing,bullish
+017890,한국알콜,15420,4.7x,+10.5%,Effort vs Result,Effort vs Result,bullish
+071200,인피니트헬스케어,11820,0.2x,+22.1%,No Supply,No Supply + Testing,bullish
+012210,삼미금속,12460,0.5x,+50.5%,No Supply,No Supply,bullish
+099440,스맥,4180,0.3x,+9.1%,No Supply,No Supply + Testing,bullish
+424870,이뮨온시아,3100,0.7x,+3.1%,No Supply,No Supply,bullish
+091580,상신이디피,21050,0.4x,+16.9%,No Supply,No Supply + Testing,bullish
+035600,KG이니시스,9930,0.5x,+0.0%,No Supply,No Supply + Testing,bullish
+389650,넥스트바이오메디컬,32600,3.0x,-3.9%,Effort vs Result,Effort vs Result,bullish
+216080,제테마,7230,0.4x,+38.8%,No Supply,No Supply + Testing,bullish
+493280,아이엠바이오로직스,17520,2.1x,+5.9%,Effort vs Result,Effort vs Result,bullish
+317330,덕산테코피아,12760,0.2x,+13.9%,No Supply,No Supply + Testing,bullish
+060720,KH바텍,11010,0.6x,+4.8%,No Supply,No Supply,bullish
+452280,한선엔지니어링,13360,0.7x,+18.9%,No Supply,No Supply,bullish
+0011T0,채비,5490,0.5x,+10.8%,No Supply,No Supply + Testing,bullish
+378340,필에너지,11750,0.4x,+9.2%,No Supply,No Supply,bullish
+314130,지놈앤컴퍼니,4765,2.8x,+26.8%,Effort vs Result,Effort vs Result,bullish
+089980,상아프론테크,15580,0.7x,+8.7%,No Supply,No Supply,bullish
+036030,케이티알파,4925,2.5x,+5.5%,Stopping Volume,Stopping Volume,bullish
+0008Z0,에스엔시스,23350,1.8x,+1.4%,Stopping Volume,Stopping Volume,bullish
+190510,나무가,15720,0.2x,+12.3%,No Supply,No Supply,bullish
+125020,티씨머티리얼즈,6210,0.7x,+12.0%,No Supply,No Supply,bullish
+237880,클리오,11960,0.6x,+1.5%,No Supply,No Supply,bullish
+064550,바이오니아,8160,0.1x,+2.1%,No Supply,No Supply + Testing,bullish
+243840,신흥에스이씨,5440,0.2x,+7.2%,No Supply,No Supply,bullish
+199430,케이엔알시스템,18390,0.3x,+20.4%,No Supply,No Supply,bullish
+459510,나우로보틱스,15720,0.3x,+4.0%,No Supply,No Supply,bullish
+126730,코칩,22800,0.2x,+30.0%,No Supply,No Supply + Testing,bullish
+083310,엘오티베큠,11210,3.0x,+23.6%,Effort vs Result,Effort vs Result,bullish
+340450,지씨지놈,8080,5.3x,+45.5%,Effort vs Result,Effort vs Result,bullish
+304100,솔트룩스,15060,0.5x,+1.4%,No Supply,No Supply + Testing,bullish
+005160,동국산업,3495,0.3x,+33.3%,No Supply,No Supply + Testing,bullish
+046120,오르비텍,5660,0.5x,+16.6%,No Supply,No Supply,bullish
+024060,흥구석유,12550,0.1x,+7.9%,Testing,Testing,bullish
+256840,한국비엔씨,2650,0.2x,+3.5%,No Supply,No Supply + Testing,bullish
+067290,JW신약,3155,0.1x,+26.0%,No Supply,No Supply,bullish
+403850,더핑크퐁컴퍼니,12160,0.3x,+4.3%,No Supply,No Supply + Testing,bullish
+138610,나이벡,15210,0.6x,+0.3%,No Supply,No Supply,bullish
+264850,이랜시스,5710,0.4x,+2.9%,No Supply,No Supply,bullish
+082800,비보존 제약,2815,0.4x,+0.8%,Testing,Testing,bullish
+199820,제일일렉트릭,7580,0.5x,+4.3%,No Supply,No Supply,bullish
+122990,와이솔,6610,0.4x,+8.3%,Testing,Testing,bullish
+118990,모트렉스,6810,0.6x,+18.6%,No Supply,No Supply,bullish
+264450,유비쿼스,11410,8.8x,+11.8%,Effort vs Result,Effort vs Result,bullish
+187870,디바이스,12000,2.3x,+6.0%,Effort vs Result,Effort vs Result,bullish
+119830,아이텍,6230,0.5x,+3.8%,No Supply,No Supply + Testing,bullish
+049630,재영솔루텍,7030,0.6x,+4.8%,No Supply,No Supply,bullish
+039860,나노엔텍,4185,0.5x,+7.4%,Testing,Testing,bullish
+396300,HT로보틱스,6010,6.3x,+38.5%,Effort vs Result,Effort vs Result,bullish
+372170,윤성에프앤씨,19950,0.4x,+5.7%,No Supply,No Supply + Testing,bullish
+126700,하이비젼시스템,10600,0.5x,+0.2%,No Supply,No Supply,bullish
+134580,탑코미디어,3280,0.4x,+38.6%,Testing,Testing,bullish
+474650,링크솔루션,27250,0.4x,+13.6%,No Supply,No Supply + Testing,bullish
+445180,퓨릿,8890,7.9x,+12.7%,Effort vs Result,Effort vs Result,bullish
+418550,제이오,4800,0.6x,+7.8%,No Supply,No Supply,bullish
+432720,퀄리타스반도체,10750,0.5x,+22.9%,No Supply,No Supply,bullish
+023600,삼보판지,9010,0.3x,+0.9%,No Supply,No Supply,bullish
+005990,매일홀딩스,10800,0.1x,+0.3%,No Supply,No Supply,bullish
+047770,코데즈컴바인,3790,0.3x,+19.8%,Testing,Testing,bullish
+069510,에스텍,13130,0.2x,+3.7%,Testing,Testing,bullish
+147830,제룡산업,7080,0.7x,+5.8%,No Supply,No Supply,bullish
+300080,플리토,8540,0.3x,+1.9%,No Supply,No Supply + Testing,bullish
+089600,KT나스미디어,12300,0.5x,+4.6%,No Supply,No Supply,bullish
+0088M0,메쥬,13870,3.7x,+9.3%,Effort vs Result,Effort vs Result,bullish
+059120,아진엑스텍,7360,0.4x,+13.0%,No Supply,No Supply,bullish
+073010,케이에스피,3380,0.2x,+16.5%,No Supply,No Supply,bullish
+265740,엔에프씨,7400,0.6x,+15.3%,No Supply,No Supply,bullish
+255220,SG,1210,4.6x,-2.0%,Effort vs Result,Effort vs Result,bullish
+115440,우리넷,12120,3.7x,+59.3%,Effort vs Result,Effort vs Result,bullish
+053260,금강철강,7030,0.1x,+22.7%,No Supply,No Supply,bullish
+417500,제이아이테크,3955,0.4x,+10.9%,No Supply,No Supply,bullish
+418420,라온텍,4110,0.5x,+8.7%,Testing,Testing,bullish
+282880,코윈로보틱스,10810,0.3x,+9.6%,No Supply,No Supply,bullish
+950190,고스트스튜디오,9680,0.5x,+2.0%,No Supply,No Supply,bullish
+027710,팜스토리,1124,0.3x,+3.2%,Testing,Testing,bullish
+056090,시지메드텍,1190,0.0x,+8.6%,Testing,Testing,bullish
+071280,로체시스템즈,7950,4.0x,+19.3%,Effort vs Result,Effort vs Result,bullish
+307750,국전,2245,0.2x,+2.5%,No Supply,No Supply,bullish
+052860,아이앤씨,6790,0.3x,+26.4%,No Supply,No Supply + Testing,bullish
+443670,에스피소프트,4995,0.2x,+40.7%,No Supply,No Supply + Testing,bullish
+108230,톱텍,3155,0.1x,+2.5%,No Supply,No Supply,bullish
+052260,현대바이오랜드,4040,2.6x,+6.6%,Effort vs Result,Effort vs Result,bullish
+101170,우림피티에스,8460,0.4x,+6.4%,No Supply,No Supply + Testing,bullish
+051980,중앙첨단소재,1035,0.0x,+3.7%,Testing,Testing,bullish
+091440,한울소재과학,3090,2.6x,+6.6%,Effort vs Result,Effort vs Result,bullish
+351320,넥사다이내믹스,3665,0.2x,+71.7%,Testing,Testing,bullish
+0011A0,액스비스,12190,0.1x,+27.5%,No Supply,No Supply + Testing,bullish
+452190,한빛레이저,4700,0.1x,+20.8%,No Supply,No Supply + Testing,bullish
+475230,엔알비,10140,0.6x,+15.0%,No Supply,No Supply,bullish
+396470,워트,6760,0.4x,+11.6%,No Supply,No Supply + Testing,bullish
+063570,NICE인프라,3245,1.8x,-0.8%,Stopping Volume,Stopping Volume,bullish
+039560,다산네트웍스,2510,0.6x,+4.5%,No Supply,No Supply,bullish
+289930,웨이비스,8150,0.3x,+16.1%,No Supply,No Supply,bullish
+039340,한국경제TV,4865,0.2x,+0.0%,No Supply,No Supply,bullish
+040300,YTN,2220,0.1x,+7.7%,No Supply,No Supply + Testing,bullish
+475580,에이럭스,7450,0.2x,+2.6%,No Supply,No Supply + Testing,bullish
+125210,아모그린텍,6170,0.4x,+8.0%,Testing,Testing,bullish
+063170,서울옥션,5680,0.3x,+3.8%,No Supply,No Supply,bullish
+129920,대성하이텍,6430,2.6x,+22.0%,Effort vs Result,Effort vs Result,bullish
+173130,오파스넷,7520,2.6x,+23.4%,Effort vs Result,Effort vs Result,bullish
+306620,지아이에스,2030,0.4x,+15.1%,No Supply,No Supply + Testing,bullish
+052420,오성첨단소재,9940,0.4x,+6.1%,Testing,Testing,bullish
+017650,대림제지,10800,0.0x,+6.5%,Testing,Testing,bullish
+246960,SCL사이언스,2770,4.8x,+38.3%,Effort vs Result,Effort vs Result,bullish
+040420,정상제이엘에스,5820,0.3x,+0.3%,Testing,Testing,bullish
+457370,한켐,11340,0.2x,+40.1%,No Supply,No Supply + Testing,bullish
+014950,삼익제약,9140,0.1x,+45.0%,No Supply,No Supply + Testing,bullish
+162300,신스틸,2185,0.1x,+18.0%,No Supply,No Supply,bullish
+048910,대원미디어,7080,2.6x,+28.8%,Effort vs Result,Effort vs Result,bullish
+432470,케이엔에스,10160,0.2x,+16.9%,No Supply,No Supply,bullish
+234300,에스트래픽,3100,0.6x,+6.3%,No Supply,No Supply,bullish
+049080,기가레인,9730,0.5x,+11.2%,No Supply,No Supply,bullish
+105740,디케이락,8000,0.5x,+8.9%,Testing,Testing,bullish
+234030,싸이닉솔루션,3350,0.5x,+9.2%,No Supply,No Supply,bullish
+294630,서남,3065,0.4x,+8.8%,No Supply,No Supply + Testing,bullish
+323350,다원넥스뷰,10200,2.6x,+28.2%,Effort vs Result,Effort vs Result,bullish
+032540,TJ미디어,3795,0.1x,+13.1%,No Supply,No Supply + Testing,bullish
+302550,리메드,2610,2.0x,-4.8%,Stopping Volume,Stopping Volume,bullish
+047820,초록뱀미디어,3235,2.4x,+1.9%,Effort vs Result,Effort vs Result,bullish
+030960,양지사,4830,0.4x,+4.4%,No Supply,No Supply,bullish
+041930,SY동아,4980,0.0x,+4.4%,No Supply,No Supply + Testing,bullish
+142280,녹십자엠에스,3180,0.2x,+10.5%,No Supply,No Supply + Testing,bullish
+083790,CG인바이츠,963,0.4x,+8.9%,No Supply,No Supply + Testing,bullish
+360070,탑머티리얼,8960,0.7x,+6.1%,No Supply,No Supply,bullish
+084730,팅크웨어,6660,0.0x,+3.0%,No Supply,No Supply,bullish
+060590,씨티씨바이오,3030,1.7x,+0.1%,Stopping Volume,Stopping Volume,bullish
+060570,드림어스컴퍼니,5000,0.2x,+22.6%,Testing,Testing,bullish
+117670,알파칩스,10860,0.3x,+19.6%,No Supply,No Supply,bullish
+302430,이노메트리,7150,0.1x,+12.7%,No Supply,No Supply + Testing,bullish
+110790,크리스에프앤씨,3025,0.4x,+3.0%,No Supply,No Supply,bullish
+347000,센코,1831,0.6x,+2.1%,No Supply,No Supply,bullish
+096350,대창솔루션,1909,0.5x,+4.2%,No Supply,No Supply,bullish
+303360,프로티아,5330,0.2x,+6.5%,Testing,Testing,bullish
+228340,동양파일,3450,0.1x,+9.9%,No Supply,No Supply + Testing,bullish
+0004V0,엔비알모션,6250,0.7x,+8.8%,No Supply,No Supply,bullish
+294140,레몬,2740,0.5x,+25.7%,No Supply,No Supply,bullish
+067170,오텍,2455,0.5x,+2.7%,No Supply,No Supply,bullish
+002800,신신제약,4445,0.2x,+0.6%,Testing,Testing,bullish
+111710,남화산업,3170,0.1x,+0.4%,No Supply,No Supply + Testing,bullish
+950220,네오이뮨텍,1895,0.3x,+1.5%,Testing,Testing,bullish
+067920,이글루,5820,0.4x,+7.7%,Testing,Testing,bullish
+056360,코위버,6380,2.9x,+17.9%,Effort vs Result,Effort vs Result,bullish
+155650,와이엠씨,3250,0.4x,+7.3%,No Supply,No Supply + Testing,bullish
+054300,팬스타엔터프라이즈,1064,0.5x,+2.4%,Testing,Testing,bullish
+039610,화성밸브,5990,0.4x,+8.7%,No Supply,No Supply,bullish
+900300,오가닉티코스메틱,2940,0.1x,+7.5%,No Supply,No Supply,bullish
+950200,소마젠,3140,0.1x,+1.8%,No Supply,No Supply,bullish
+016250,SGC E&C,11900,0.4x,+1.3%,No Supply,No Supply,bullish
+457600,벡트,4305,0.5x,+4.2%,No Supply,No Supply,bullish
+036090,위지트,1399,0.3x,+6.7%,No Supply,No Supply,bullish
+049480,오픈베이스,1900,0.5x,+2.1%,No Supply,No Supply,bullish
+050960,수산아이앤티,8660,0.4x,+1.8%,No Supply,No Supply,bullish
+033320,제이씨현시스템,3070,0.2x,+3.3%,No Supply,No Supply + Testing,bullish
+053620,태양,6900,1.6x,+2.9%,Stopping Volume,Stopping Volume,bullish
+033310,엠투엔,1459,0.5x,+5.9%,No Supply,No Supply,bullish
+225190,LK삼양,821,0.0x,+3.6%,Testing,Testing,bullish
+109670,씨싸이트,11400,8.2x,+147.8%,Effort vs Result,Effort vs Result,bullish
+053050,지에스이,1859,0.1x,+1.3%,Testing,Testing,bullish
+024950,삼천리자전거,4385,0.4x,+6.7%,Testing,Testing,bullish
+348080,큐라티스,3955,0.6x,+36.5%,No Supply,No Supply,bullish
+053270,구영테크,1948,3.4x,-0.3%,Stopping Volume,Stopping Volume,bullish
+317850,대모,6240,0.3x,+7.6%,No Supply,No Supply,bullish
+105760,포스뱅크,5010,0.2x,+11.2%,No Supply,No Supply + Testing,bullish
+459550,알트,2045,0.1x,+4.7%,No Supply,No Supply + Testing,bullish
+019990,에너토크,5210,0.3x,+4.7%,No Supply,No Supply,bullish
+059100,아이컴포넌트,6940,0.3x,+17.4%,Testing,Testing,bullish
+122310,제노레이,3360,2.8x,-0.6%,Stopping Volume,Stopping Volume,bullish
+199550,레이저옵텍,3250,0.5x,+13.9%,No Supply,No Supply,bullish
+355690,에이텀,5000,0.5x,+9.0%,No Supply,No Supply,bullish
+189860,서전기전,5030,0.3x,+13.2%,No Supply,No Supply + Testing,bullish
+361570,알비더블유,1661,0.4x,+8.3%,No Supply,No Supply,bullish
+229000,젠큐릭스,1957,0.0x,+10.3%,Testing,Testing,bullish
+073110,엘엠에스,5140,0.4x,+3.6%,No Supply,No Supply + Testing,bullish
+131400,이브이첨단소재,766,0.0x,+1.7%,Testing,Testing,bullish
+321820,아티스트컴퍼니,2940,0.2x,+18.4%,No Supply,No Supply,bullish
+033340,좋은사람들,460,0.0x,+8.0%,Testing,Testing,bullish
+042040,케이피엠테크,5110,0.1x,+11.2%,Testing,Testing,bullish
+208860,다산디엠씨,1303,0.0x,+15.2%,Testing,Testing,bullish
+222420,쎄노텍,922,0.3x,+2.7%,No Supply,No Supply,bullish
+278650,HLB바이오스텝,2530,0.3x,+13.8%,No Supply,No Supply,bullish
+084650,랩지노믹스,2925,10.3x,-3.0%,Effort vs Result,Effort vs Result,bullish
+479960,위너스일렉,6040,0.3x,+0.2%,Testing,Testing,bullish
+140520,대창스틸,2000,1.7x,+1.3%,Stopping Volume,Stopping Volume,bullish
+032960,동일기연,2395,5.6x,+16.1%,Effort vs Result,Effort vs Result,bullish
+452200,민테크,1693,0.7x,+12.9%,No Supply,No Supply,bullish
+199480,뱅크웨어글로벌,3990,0.1x,+18.3%,No Supply,No Supply + Testing,bullish
+053950,경남제약,1975,0.1x,+12.2%,No Supply,No Supply,bullish
+226340,본느,4590,0.1x,+1.3%,No Supply,No Supply,bullish
+215380,콜마바이오텍,2285,2.9x,+0.7%,Effort vs Result,Effort vs Result,bullish
+101240,씨큐브,3380,0.5x,+2.3%,No Supply,No Supply,bullish
+026040,제이에스티나,2260,0.1x,+10.9%,No Supply,No Supply + Testing,bullish
+075130,플랜티넷,2135,0.5x,+3.2%,No Supply,No Supply,bullish
+900270,헝셩그룹,2825,0.1x,+7.7%,No Supply,No Supply,bullish
+469750,아이비젼웍스,991,0.0x,+12.9%,Testing,Testing,bullish
+109820,진매트릭스,1590,0.2x,+5.1%,Testing,Testing,bullish
+476080,M83,3990,0.6x,+3.1%,No Supply,No Supply,bullish
+104200,NHN벅스,2175,2.2x,-16.0%,Stopping Volume,Stopping Volume,bullish
+050110,캠시스,1079,0.0x,+4.9%,Testing,Testing,bullish
+419120,산돌,2210,1.7x,-5.8%,Stopping Volume,Stopping Volume,bullish
+300120,라온피플,3160,0.2x,+18.8%,No Supply,No Supply,bullish
+097780,에코볼트,1491,0.2x,+7.0%,No Supply,No Supply,bullish
+444530,심플랫폼,4790,0.6x,+5.7%,No Supply,No Supply,bullish
+038870,에코심플렉스,2155,0.4x,+14.6%,Testing,Testing,bullish
+336060,웨이버스,3030,0.2x,+2.1%,No Supply,No Supply,bullish
+091340,S&K폴리텍,2525,0.2x,+13.6%,Testing,Testing,bullish
+288620,에스프리즘,4120,0.2x,+1.8%,Testing,Testing,bullish
+057680,티사이언티픽,1785,0.2x,+5.6%,Testing,Testing,bullish
+333050,이노테나,5760,0.6x,+10.5%,No Supply,No Supply,bullish
+297570,아틀라스링크,4095,2.3x,-6.6%,Effort vs Result,Effort vs Result,bullish
+193250,링크드,2040,1.7x,+3.4%,Stopping Volume,Stopping Volume,bullish
+114630,폴라리스우노,1609,0.3x,+5.4%,Testing,Testing,bullish
+373170,엠아이큐브솔루션,1799,0.1x,+1.7%,No Supply,No Supply + Testing,bullish
+148250,알엔투테크놀로지,2020,0.5x,+7.7%,No Supply,No Supply + Testing,bullish
+032750,삼진,2975,0.0x,+0.6%,Testing,Testing,bullish
+043200,파루,1239,0.1x,+9.8%,No Supply,No Supply + Testing,bullish
+016670,디모아,2530,2.5x,+2.5%,Effort vs Result,Effort vs Result,bullish
+054090,삼진엘앤디,1015,0.4x,+3.7%,No Supply,No Supply + Testing,bullish
+101680,한국정밀기계,2980,0.4x,+11.2%,Testing,Testing,bullish
+090150,아이윈,5940,0.5x,+6.9%,No Supply,No Supply,bullish
+368600,아이씨에이치,956,0.0x,+5.5%,Testing,Testing,bullish
+405920,나라셀라,1867,0.1x,+5.0%,No Supply,No Supply + Testing,bullish
+023770,플레이위드,2650,0.3x,+6.6%,No Supply,No Supply + Testing,bullish
+378800,샤페론,510,0.0x,+2.8%,Testing,Testing,bullish
+188040,바이오포트,4985,0.6x,+0.4%,No Supply,No Supply,bullish
+043590,웰킵스하이텍,1732,2.2x,+29.4%,Effort vs Result,Effort vs Result,bullish
+154040,다산솔루에타,1055,0.0x,+9.4%,Testing,Testing,bullish
+115570,스타플렉스,2835,0.4x,+12.5%,No Supply,No Supply,bullish
+065690,파커스,1858,0.5x,+15.9%,Testing,Testing,bullish
+331520,밸로프,2240,1.7x,-2.6%,Stopping Volume,Stopping Volume,bullish
+215480,토박스코리아,1990,1.5x,-1.5%,Stopping Volume,Stopping Volume,bullish
+043360,디지아이,2375,0.2x,+2.8%,No Supply,No Supply,bullish
+131100,티엔엔터테인먼트,3120,9.2x,+22.7%,Effort vs Result,Effort vs Result,bullish
+405000,플라즈맵,3760,6.3x,-5.7%,Effort vs Result,Effort vs Result,bullish
+084440,유비온,5200,2.0x,-5.7%,Effort vs Result,Effort vs Result,bullish
+113810,디젠스,3035,0.2x,+16.7%,Testing,Testing,bullish
+050760,에스폴리텍,1169,0.3x,+1.5%,No Supply,No Supply + Testing,bullish
+291810,핀텔,1189,2.1x,-12.1%,Stopping Volume,Stopping Volume,bullish
+477340,에이치엠씨제7호스팩,2060,3.3x,+0.4%,Stopping Volume,Stopping Volume,bullish
+489480,키움제11호스팩,2200,0.0x,+5.3%,Testing,Testing,bullish
+478390,KB제29호스팩,2070,2.4x,+0.6%,Stopping Volume,Stopping Volume,bullish
+482520,교보16호스팩,2065,0.0x,+0.9%,Testing,Testing,bullish
+0132G0,교보20호스팩,1990,3.0x,-0.2%,Stopping Volume,Stopping Volume,bullish
+469900,하나31호스팩,2100,2.3x,+0.6%,Effort vs Result,Effort vs Result,bullish
+482690,대신밸런스제19호스팩,2065,3.0x,-0.4%,Stopping Volume,Stopping Volume,bullish
+473950,에스케이증권제13호스팩,2050,0.5x,+0.4%,No Supply,No Supply,bullish
+487720,키움제10호스팩,2035,3.2x,+0.6%,Stopping Volume,Stopping Volume,bullish
+475250,하나33호스팩,2085,7.6x,+0.6%,Effort vs Result,Effort vs Result,bullish
+475240,하나32호스팩,2090,4.2x,+0.0%,Stopping Volume,Stopping Volume,bullish
