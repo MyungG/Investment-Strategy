@@ -1,0 +1,9 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market,range1,range2,range3,contraction,vol_contraction,pivot_price,distance,vol_dryup
+009150,삼성전기,1491000,1342800,+11.0%,1.1x,6/7,Double Bottom,1316000.0,1322000.0,1458000.0,+2.3%,KOSPI,,,,,,,,
+105560,KB금융,173800,171656,+1.2%,0.7x,7/7,Double Bottom,160100.0,160000.0,175800.0,-1.1%,KOSPI,,,,,,,,
+055550,신한지주,110800,107500,+3.1%,0.9x,7/7,VCP,,,,,KOSPI,18.4%,13.1%,8.2%,45% of initial,True,,,
+086790,하나금융지주,134400,132480,+1.4%,0.8x,7/7,VCP,,,,,KOSPI,22.6%,12.5%,7.6%,33% of initial,True,,,
+066570,LG전자,214500,192086,+11.7%,1.1x,6/7,Double Bottom,194500.0,194900.0,216500.0,-0.9%,KOSPI,,,,,,,,
+007340,DN오토모티브,50400,45491,+10.8%,1.6x,6/7,Double Bottom,44200.0,43500.0,48550.0,+3.8%,KOSPI,,,,,,,,
+417310,코람코더원리츠,2395,2294,+4.4%,0.3x,7/7,Double Bottom,2264.0,2355.0,2380.0,+0.6%,KOSPI,,,,,,,,
+005320,온타이드,1329,934,+42.2%,0.3x,6/7,Pivot Setup,,,,,KOSPI,,,,,,1356.0,-2.0%,0.5x avg
