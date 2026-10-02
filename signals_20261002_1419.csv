@@ -1,0 +1,10 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market,pivot_price,distance,vol_dryup
+066570,LG전자,215500,194958,+10.5%,0.6x,6/7,Double Bottom,194500.0,194900.0,216500.0,-0.5%,KOSPI,,,
+033780,KT&G,176800,176004,+0.5%,0.7x,6/7,Double Bottom,171900.0,168400.0,178100.0,-0.7%,KOSPI,,,
+175330,JB금융지주,29000,29065,-0.2%,0.5x,6/7,Double Bottom,25550.0,26400.0,29350.0,-1.2%,KOSPI,,,
+028670,팬오션,6250,5727,+9.1%,1.6x,7/7,Double Bottom,5630.0,5510.0,6380.0,-2.0%,KOSPI,,,
+007340,DN오토모티브,50500,46301,+9.1%,0.9x,6/7,Double Bottom,44200.0,43500.0,48550.0,+4.0%,KOSPI,,,
+094800,맵스리얼티,7870,7006,+12.3%,0.2x,7/7,Pivot Setup,,,,,KOSPI,8000.0,-1.6%,0.4x avg
+417310,코람코더원리츠,2385,2315,+3.0%,0.5x,7/7,Double Bottom,2264.0,2355.0,2380.0,+0.2%,KOSPI,,,
+166090,하나머티리얼즈,63300,54592,+16.0%,0.8x,6/7,Pivot Setup,,,,,KOSDAQ,63500.0,-0.3%,0.7x avg
+052460,아이크래프트,6510,5725,+13.7%,0.7x,6/7,Pivot Setup,,,,,KOSDAQ,6510.0,+0.0%,0.5x avg
