@@ -1,0 +1,5 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market,pivot_price,distance,vol_dryup
+033780,KT&G,177300,175874,+0.8%,0.9x,6/7,Double Bottom,171900.0,168400.0,178100.0,-0.4%,KOSPI,,,
+007340,DN오토모티브,48450,46884,+3.3%,0.9x,6/7,Double Bottom,44200.0,43500.0,48550.0,-0.2%,KOSPI,,,
+036800,나이스정보통신,8150,7008,+16.3%,0.3x,7/7,Double Bottom,7200.0,7470.0,8210.0,-0.7%,KOSDAQ,,,
+051160,지어소프트,14220,10341,+37.5%,0.5x,7/7,Pivot Setup,,,,,KOSDAQ,14290.0,-0.5%,0.4x avg
