@@ -1,0 +1,7 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market,pivot_price,distance,vol_dryup
+006400,삼성SDI,565000,511430,+10.5%,1.8x,7/7,Double Bottom,530000.0,513000.0,574000.0,-1.6%,KOSPI,,,
+138040,메리츠금융지주,132000,125004,+5.6%,1.6x,7/7,Double Bottom,125000.0,125500.0,132000.0,+0.0%,KOSPI,,,
+033780,KT&G,180100,175772,+2.5%,1.2x,7/7,Double Bottom,171900.0,168400.0,178100.0,+1.1%,KOSPI,,,
+192820,코스맥스,285000,259730,+9.7%,1.5x,7/7,Double Bottom,265000.0,269000.0,280500.0,+1.6%,KOSPI,,,
+064290,인텍플러스,61700,41103,+50.1%,0.7x,7/7,Pivot Setup,,,,,KOSDAQ,62600.0,-1.4%,0.6x avg
+036800,나이스정보통신,8270,7105,+16.4%,0.5x,7/7,Double Bottom,7200.0,7470.0,8210.0,+0.7%,KOSDAQ,,,
