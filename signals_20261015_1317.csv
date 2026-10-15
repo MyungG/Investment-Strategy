@@ -1,0 +1,6 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market,box_high,box_range,breakout,pivot_dryup
+138040,메리츠금융지주,129900,125382,+3.6%,1.1x,6/7,Double Bottom,125000.0,125500.0,132000.0,-1.6%,KOSPI,,,,
+033780,KT&G,189800,175850,+7.9%,1.8x,7/7,Flat Base Breakout,,,,,KOSPI,183400.0,9.1%,+3.5%,False
+021240,코웨이,106800,98694,+8.2%,1.3x,7/7,Double Bottom,95200.0,99100.0,108400.0,-1.5%,KOSPI,,,,
+192820,코스맥스,282000,263588,+7.0%,1.1x,7/7,Double Bottom,265000.0,269000.0,280500.0,+0.5%,KOSPI,,,,
+036800,나이스정보통신,7970,7199,+10.7%,1.4x,7/7,Double Bottom,7200.0,7470.0,8210.0,-2.9%,KOSDAQ,,,,
