@@ -1,0 +1,6 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market,pivot_price,distance,vol_dryup
+006400,삼성SDI,591000,526090,+12.3%,2.2x,7/7,Double Bottom,530000.0,513000.0,574000.0,+3.0%,KOSPI,,,
+021240,코웨이,106900,99346,+7.6%,0.9x,7/7,Double Bottom,95200.0,99100.0,108400.0,-1.4%,KOSPI,,,
+192820,코스맥스,285000,267814,+6.4%,0.8x,7/7,Double Bottom,265000.0,269000.0,280500.0,+1.6%,KOSPI,,,
+036800,나이스정보통신,8270,7306,+13.2%,0.3x,7/7,Double Bottom,7200.0,7470.0,8210.0,+0.7%,KOSDAQ,,,
+051160,지어소프트,14760,10997,+34.2%,0.6x,7/7,Pivot Setup,,,,,KOSDAQ,14340.0,+2.9%,0.3x avg
