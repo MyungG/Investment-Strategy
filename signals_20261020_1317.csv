@@ -1,0 +1,5 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market,range1,range2,range3,contraction,vol_contraction,pivot_price,distance,vol_dryup
+005830,DB손해보험,190200,183528,+3.6%,0.6x,6/7,Double Bottom,186100.0,182500.0,193800.0,-1.9%,KOSPI,,,,,,,,
+021240,코웨이,108400,99628,+8.8%,0.7x,7/7,Double Bottom,95200.0,99100.0,108400.0,+0.0%,KOSPI,,,,,,,,
+089860,롯데렌탈,50300,48119,+4.5%,3.8x,7/7,VCP,,,,,KOSPI,30.0%,16.7%,9.3%,31% of initial,True,,,
+051160,지어소프트,14840,11109,+33.6%,0.3x,7/7,Pivot Setup,,,,,KOSDAQ,,,,,,14920.0,-0.5%,0.3x avg
