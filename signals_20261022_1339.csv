@@ -1,0 +1,2 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market
+021240,코웨이,106200,100082,+6.1%,0.9x,7/7,Double Bottom,95200,99100,108400,-2.0%,KOSPI
