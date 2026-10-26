@@ -1,6 +1,0 @@
-﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market,box_high,box_range,breakout,pivot_dryup,range1,range2,range3,contraction,vol_contraction
-138040,메리츠금융지주,129700,125496,+3.3%,1.7x,6/7,Double Bottom,125000.0,125500.0,132000.0,-1.7%,KOSPI,,,,,,,,,
-033780,KT&G,191400,176096,+8.7%,1.6x,7/7,Flat Base Breakout,,,,,KOSPI,191000.0,13.0%,+0.2%,False,,,,,
-021240,코웨이,109400,99052,+10.4%,1.2x,7/7,Double Bottom,95200.0,99100.0,108400.0,+0.9%,KOSPI,,,,,,,,,
-417310,코람코더원리츠,2385,2340,+1.9%,0.4x,7/7,VCP,,,,,KOSPI,,,,,10.4%,6.3%,5.0%,48% of initial,True
-036800,나이스정보통신,8330,7253,+14.8%,0.8x,7/7,Double Bottom,7200.0,7470.0,8210.0,+1.5%,KOSDAQ,,,,,,,,,

@@ -1,7 +1,0 @@
-﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market
-009150,삼성전기,1493000,1379180,+8.3%,1.1x,6/7,Double Bottom,1316000,1322000,1458000,+2.4%,KOSPI
-006400,삼성SDI,561000,507770,+10.5%,1.5x,6/7,Double Bottom,530000,513000,574000,-2.3%,KOSPI
-138040,메리츠금융지주,128800,124726,+3.3%,1.4x,6/7,Double Bottom,125000,125500,132000,-2.4%,KOSPI
-033780,KT&G,179100,175804,+1.9%,1.0x,7/7,Double Bottom,171900,168400,178100,+0.6%,KOSPI
-192820,코스맥스,294000,257722,+14.1%,1.1x,7/7,Double Bottom,265000,269000,280500,+4.8%,KOSPI
-036800,나이스정보통신,8160,7053,+15.7%,1.3x,7/7,Double Bottom,7200,7470,8210,-0.6%,KOSDAQ
