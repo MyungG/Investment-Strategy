@@ -1,0 +1,2 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market
+204620,글로벌텍스프리,5880,5610,+4.8%,1.2x,6/7,Double Bottom,5490,5320,5950,-1.2%,KOSDAQ
