@@ -1,0 +1,2 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,pivot_price,distance,vol_dryup,market
+489460,바이오비쥬,13790,11997,+14.9%,1.2x,6/7,Pivot Setup,13800,-0.1%,0.8x avg,KOSDAQ
