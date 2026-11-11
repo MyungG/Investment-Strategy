@@ -1,0 +1,2 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,pivot_price,distance,vol_dryup,market
+028050,삼성E&A,66600,52252,+27.5%,0.8x,7/7,Pivot Setup,67700,-1.6%,0.7x avg,KOSPI
