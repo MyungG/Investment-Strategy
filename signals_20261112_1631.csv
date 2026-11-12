@@ -1,0 +1,4 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,pivot_price,distance,vol_dryup,market,bottom1,bottom2,neckline,dist_from_neckline
+012750,에스원,99600,89136,+11.7%,0.8x,6/7,Pivot Setup,101600.0,-2.0%,0.6x avg,KOSPI,,,,
+192820,코스맥스,276500,272460,+1.5%,2.7x,6/7,Double Bottom,,,,KOSPI,265000.0,269000.0,280500.0,-1.4%
+051630,진양화학,4180,2068,+102.1%,0.7x,6/7,Pivot Setup,4240.0,-1.4%,0.5x avg,KOSPI,,,,
