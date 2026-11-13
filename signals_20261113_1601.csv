@@ -1,0 +1,5 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,pivot_price,distance,vol_dryup,market,bottom1,bottom2,neckline,dist_from_neckline
+028050,삼성E&A,69400,53037,+30.9%,0.8x,7/7,Pivot Setup,68000.0,+2.1%,0.7x avg,KOSPI,,,,
+012750,에스원,100900,89520,+12.7%,0.6x,6/7,Pivot Setup,101600.0,-0.7%,0.6x avg,KOSPI,,,,
+192820,코스맥스,279000,272040,+2.6%,0.7x,6/7,Double Bottom,,,,KOSPI,265000.0,269000.0,280500.0,-0.5%
+010640,진양폴리,3920,2393,+63.8%,0.8x,6/7,Pivot Setup,3825.0,+2.5%,0.4x avg,KOSPI,,,,
