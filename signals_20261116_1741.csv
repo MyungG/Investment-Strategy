@@ -1,0 +1,8 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,bottom1,bottom2,neckline,dist_from_neckline,market,pivot_price,distance,vol_dryup
+018260,삼성에스디에스,227500,215960,+5.3%,1.1x,6/7,Double Bottom,190600.0,200000.0,223500.0,+1.8%,KOSPI,,,
+028050,삼성E&A,68900,53499,+28.8%,0.5x,7/7,Pivot Setup,,,,,KOSPI,69700.0,-1.1%,0.6x avg
+012750,에스원,102600,89944,+14.1%,0.7x,6/7,Pivot Setup,,,,,KOSPI,101600.0,+1.0%,0.7x avg
+192820,코스맥스,283500,271970,+4.2%,0.7x,6/7,Double Bottom,265000.0,269000.0,280500.0,+1.1%,KOSPI,,,
+089860,롯데렌탈,58400,51440,+13.5%,0.5x,7/7,Pivot Setup,,,,,KOSPI,58500.0,-0.2%,0.4x avg
+051630,진양화학,5010,2211,+126.6%,0.7x,6/7,Pivot Setup,,,,,KOSPI,4950.0,+1.2%,0.6x avg
+417310,코람코더원리츠,2455,2394,+2.5%,2.1x,7/7,Double Bottom,2380.0,2405.0,2475.0,-0.8%,KOSPI,,,
