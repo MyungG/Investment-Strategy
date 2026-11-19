@@ -1,0 +1,4 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,pivot_price,distance,vol_dryup,market,bottom1,bottom2,neckline,dist_from_neckline
+089860,롯데렌탈,58600,51916,+12.9%,0.2x,7/7,Pivot Setup,58600.0,+0.0%,0.5x avg,KOSPI,,,,
+104700,한국철강,12940,10480,+23.5%,0.8x,7/7,Pivot Setup,13000.0,-0.5%,0.7x avg,KOSPI,,,,
+417310,코람코더원리츠,2455,2399,+2.3%,0.0x,7/7,Double Bottom,,,,KOSPI,2380.0,2405.0,2475.0,-0.8%
