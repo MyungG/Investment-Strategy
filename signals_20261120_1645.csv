@@ -1,0 +1,4 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,pivot_price,distance,vol_dryup,market,bottom1,bottom2,neckline,dist_from_neckline
+089860,롯데렌탈,58500,52080,+12.3%,1.2x,7/7,Pivot Setup,58700.0,-0.3%,0.7x avg,KOSPI,,,,
+005500,삼진제약,19470,19233,+1.2%,1.5x,6/7,Double Bottom,,,,KOSPI,18900.0,19120.0,19540.0,-0.4%
+204620,글로벌텍스프리,6100,5661,+7.8%,5.5x,6/7,Double Bottom,,,,KOSDAQ,5490.0,5320.0,5950.0,+2.5%
