@@ -1,0 +1,4 @@
+﻿ticker,name,price,ma50,vs_ma50,vol_ratio,trend_score,pattern,pivot_price,distance,vol_dryup,market
+068270,셀트리온,221000,194292,+13.7%,1.0x,6/7,Pivot Setup,220000,+0.5%,0.8x avg,KOSPI
+180640,한진칼,253000,162178,+56.0%,0.4x,7/7,Pivot Setup,253000,+0.0%,0.4x avg,KOSPI
+089860,롯데렌탈,58700,53026,+10.7%,0.3x,7/7,Pivot Setup,58800,-0.2%,0.4x avg,KOSPI
